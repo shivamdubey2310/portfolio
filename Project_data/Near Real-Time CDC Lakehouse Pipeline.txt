@@ -1,0 +1,60 @@
+Near Real-Time CDC Lakehouse Pipeline
+
+Overview
+
+A production-grade, near real-time Change Data Capture (CDC) Lakehouse pipeline built on Microsoft Azure that incrementally ingests OLTP changes into a Delta Lake using a Medallion Architecture (Bronze → Silver → Gold).
+
+The system reduces data latency from traditional daily batch loads to 5–10 minute micro-batch intervals, enabling near real-time analytics without the operational overhead of full streaming infrastructure.
+
+Tech Stack
+
+- Source Database: Azure SQL Database (Change Tracking enabled)
+- Orchestration: Azure Data Factory (Tumbling Window Trigger)
+- Storage: Azure Data Lake Storage Gen2 (Parquet – Bronze layer)
+Processing Engine: Azure Databricks (PySpark)
+Table Format: Delta Lake (ACID transactions & MERGE)
+Analytics Layer: Azure Synapse Analytics (Serverless SQL)
+Languages: Python, SQL, PySpark
+
+The Challenge
+
+Traditional batch ETL pipelines refresh data once per day, creating stale dashboards and delayed business decisions.
+
+Full streaming solutions (Event Hub/Kafka) solve latency but introduce:
+
+- Higher infrastructure cost
+- Operational complexity
+- Increased maintenance overhead
+
+The challenge was to design a cost-efficient, enterprise-friendly alternative that provides near real-time freshness while remaining simple to operate and resilient to failures.
+
+The Solution
+
+I engineered a stateful, idempotent micro-batch architecture that balances freshness, cost, and reliability:
+
+- Incremental CDC Extraction: Leveraged Azure SQL Change Tracking with `CHANGETABLE()` to extract only changed rows since the last successful run.
+
+- Metadata-Driven State Management: Designed a `cdc_metadata` table to store the last processed version, ensuring idempotency and safe retries. Metadata updates occur only after successful downstream processing.
+
+- Medallion Lakehouse Architecture:
+
+  - Bronze: Raw CDC data stored in Parquet
+  - Silver: Deduplicated Delta MERGE upserts (ACID compliant)
+  - Gold: Aggregated business-ready datasets (e.g., sales summary by status)
+
+- Micro-Batch Orchestration: Configured ADF tumbling window triggers (5–10 minutes) to simulate near real-time processing without streaming infrastructure.
+
+- Fault-Tolerant Processing: If Databricks processing fails, metadata is not updated — allowing safe reprocessing without data duplication.
+
+Key Highlights
+
+- Enterprise-Grade Design: Implements Medallion Architecture and ACID Delta merges — patterns widely used in production lakehouse environments.
+
+- Idempotent & Retry-Safe: Metadata-driven version control guarantees consistent re-runs and fault tolerance.
+
+- Cost-Optimized Architecture: Avoids streaming infrastructure; processes only incremental changes; uses auto-terminating Databricks clusters.
+
+- Late Data Handling: Watermark logic ensures late-arriving records are safely processed.
+
+- Analytics-Ready Output: Gold Delta tables are directly queryable via Synapse Serverless using `OPENROWSET` with zero additional infrastructure.
+

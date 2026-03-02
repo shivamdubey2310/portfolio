@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Shivam Dubey — Data Engineering Portfolio</title>
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div>
+          <div style="font-size:38px; font-weight:800;">Shivam Dubey</div>
+          <div style="font-size:12px;color:var(--muted);">Data Engineering Student • Indore, India</div>
+        </div>
+      </div>
+      <nav aria-label="Primary">
+        <a href="./index.html" aria-current="page">Home</a>
+        <a href="./projects.html">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#education">Education</a>
+        <a href="#contact" class="cta">Contact</a>
+        <button class="darkModeToggle" id="darkModeToggle" aria-label="Toggle dark mode">
+          <svg class="sunIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moonIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="panel left reveal" data-delay="1">
+          <div class="kicker">
+            <span class="dot" aria-hidden="true"></span>
+            <span>Building reliable pipelines • Warehousing • Cloud • Analytics-ready data</span>
+          </div>
+          <h1>
+            I turn raw data into
+            <span style="color: #0f766e;">trusted products</span>.
+          </h1>
+          <p class="subtitle">
+            Hi, I'm <strong>Shivam Dubey</strong> — an M.Tech (Dual Degree) student in Artificial Intelligence & Data Science at SDSF, DAVV, Indore.
+            I'm passionate about data engineering: building scalable pipelines, optimizing workflows, and creating clean data foundations for AI/ML systems.
+          </p>
+          <div class="heroActions">
+            <a class="btn primary" href="./projects.html">View projects</a>
+            <a class="btn" href="../ShivamDubey.pdf" target="_blank" rel="noopener">Download resume</a>
+            <a class="btn" href="https://www.linkedin.com/in/shivam-dubey20/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+
+          <div class="statsBar panel reveal" data-delay="2" style="margin-top:18px; box-shadow:none;">
+            <div class="stat">
+              <div class="label">Focus</div>
+              <div class="value">Cloud-based data pipelines</div>
+            </div>
+            <div class="stat">
+              <div class="label">Strength</div>
+              <div class="value">Microsoft Fabric</div>
+            </div>
+            <div class="stat">
+              <div class="label">Platforms</div>
+              <div class="value">Azure, Microsoft Fabric</div>
+            </div>
+            <div class="stat">
+              <div class="label">Interests</div>
+              <div class="value">Real-time</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel right reveal" data-delay="2">
+          <div class="miniCard">
+            <div class="miniTitle">Signature</div>
+            <div class="bigStat">14</div>
+            <div class="miniText">projects across pipelines, modeling & BI</div>
+          </div>
+          <div class="miniCard">
+            <div class="miniTitle">Currently learning</div>
+            <div class="miniText">Azure Cloud, Databricks, and Spark Optimization.</div>
+          </div>
+          <div class="miniCard">
+            <div class="miniTitle">Top Tools I Use</div>
+            <div class="miniText topTools">
+              <span class="toolTag">Microsoft Fabric</span>
+              <span class="toolTag">Apache Airflow</span>
+              <span class="toolTag">PySpark</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reveal" data-delay="1">
+        <div class="sectionHead">
+          <h2>Featured projects</h2>
+          <div class="hint">The highlight reel — see all on the Projects page</div>
+        </div>
+
+        <div class="grid3">
+          <article class="card reveal" data-delay="1">
+            <div class="cardTop">
+              <h3>Near Real-Time CDC Lakehouse Pipeline</h3>
+              <span class="pill">CDC</span>
+            </div>
+            <p class="meta">Production-grade CDC pipeline on Azure that incrementally ingests OLTP changes into Delta Lake using Medallion Architecture with 5–10 min micro-batch intervals.</p>
+            <div class="pipeline" aria-label="Pipeline summary">
+              <div class="pipeStep"><span class="pipeDot" aria-hidden="true"></span>CDC Extract</div>
+              <div class="pipeArrow" aria-hidden="true">→</div>
+              <div class="pipeStep"><span class="pipeDot" aria-hidden="true"></span>Bronze</div>
+              <div class="pipeArrow" aria-hidden="true">→</div>
+              <div class="pipeStep"><span class="pipeDot" aria-hidden="true"></span>Silver</div>
+              <div class="pipeArrow" aria-hidden="true">→</div>
+              <div class="pipeStep"><span class="pipeDot" aria-hidden="true"></span>Gold</div>
+            </div>
+            <div class="tags">
+              <span class="tag">Azure Data Factory</span>
+              <span class="tag">Databricks</span>
+              <span class="tag">Delta Lake</span>
+              <span class="tag">Synapse Analytics</span>
+            </div>
+          </article>
+
+          <article class="card reveal" data-delay="2">
+            <div class="cardTop">
+              <h3>Automated Weather Monitoring (Microsoft Fabric)</h3>
+              <span class="pill">Real-time</span>
+            </div>
+            <p class="meta">Unified streaming architecture for immediate environmental monitoring and automated alerts.</p>
+            <div class="pipeline" aria-label="Pipeline summary">
+              <div class="pipeStep"><span class="pipeDot" aria-hidden="true"></span>Telemetry</div>
+              <div class="pipeArrow" aria-hidden="true">→</div>
+              <div class="pipeStep"><span class="pipeDot" aria-hidden="true"></span>Eventstream</div>
+              <div class="pipeArrow" aria-hidden="true">→</div>
+              <div class="pipeStep"><span class="pipeDot" aria-hidden="true"></span>Eventhouse</div>
+              <div class="pipeArrow" aria-hidden="true">→</div>
+              <div class="pipeStep"><span class="pipeDot" aria-hidden="true"></span>Dashboard/Activator</div>
+            </div>
+            <div class="tags">
+              <span class="tag">Microsoft Fabric</span>
+              <span class="tag">Eventstreams</span>
+              <span class="tag">Eventhouse</span>
+              <span class="tag">Real-time Dashboard</span>
+            </div>
+          </article>
+
+          <article class="card reveal" data-delay="3">
+            <div class="cardTop">
+              <h3>Medallion ETL Pipeline (Microsoft Fabric)</h3>
+              <span class="pill">Medallion</span>
+            </div>
+            <p class="meta">Raw API → Bronze/Silver/Gold Delta tables → Power BI dashboards for AQI forecasting.</p>
+            <div class="pipeline">
+              <div class="pipeStep"><span class="pipeDot" aria-hidden="true"></span>Bronze</div>
+              <div class="pipeArrow" aria-hidden="true">→</div>
+              <div class="pipeStep"><span class="pipeDot" aria-hidden="true"></span>Silver</div>
+              <div class="pipeArrow" aria-hidden="true">→</div>
+              <div class="pipeStep"><span class="pipeDot" aria-hidden="true"></span>Gold</div>
+              <div class="pipeArrow" aria-hidden="true">→</div>
+              <div class="pipeStep"><span class="pipeDot" aria-hidden="true"></span>BI</div>
+            </div>
+            <div class="tags">
+              <span class="tag">Fabric Lakehouse</span>
+              <span class="tag">PySpark</span>
+              <span class="tag">Delta Lake</span>
+              <span class="tag">Power BI</span>
+            </div>
+          </article>
+
+          <article class="card reveal" data-delay="4">
+            <div class="cardTop">
+              <h3>E-commerce Data Warehouse (Star Schema)</h3>
+              <span class="pill">Warehouse</span>
+            </div>
+            <p class="meta">Designed fact/dimension schema and automated ETL to produce analytics-ready datasets.</p>
+            <div class="pipeline">
+              <div class="pipeStep"><span class="pipeDot" aria-hidden="true"></span>Extract</div>
+              <div class="pipeArrow" aria-hidden="true">→</div>
+              <div class="pipeStep"><span class="pipeDot" aria-hidden="true"></span>Transform</div>
+              <div class="pipeArrow" aria-hidden="true">→</div>
+              <div class="pipeStep"><span class="pipeDot" aria-hidden="true"></span>Load</div>
+              <div class="pipeArrow" aria-hidden="true">→</div>
+              <div class="pipeStep"><span class="pipeDot" aria-hidden="true"></span>Query</div>
+            </div>
+            <div class="tags">
+              <span class="tag">MySQL</span>
+              <span class="tag">Python (Pandas)</span>
+              <span class="tag">Dimensional Modeling</span>
+              <span class="tag">Indexing</span>
+            </div>
+          </article>
+        </div>
+
+        <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+          <a class="btn primary" href="./projects.html">Browse all projects →</a>
+          <a class="btn" href="#contact">Contact →</a>
+        </div>
+      </section>
+
+      <section id="skills" class="reveal" data-delay="1">
+        <div class="sectionHead">
+          <h2>Skills</h2>
+          <div class="hint">Core stack I use for data engineering work</div>
+        </div>
+
+        <div class="grid2">
+          <div class="card reveal" data-delay="1">
+            <h3 style="margin-top:0;">Programming Languages</h3>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Bash</span>
+            </div>
+          </div>
+
+          <div class="card reveal" data-delay="2">
+            <h3 style="margin-top:0;">Databases</h3>
+            <div class="tags">
+              <span class="tag">MySQL</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">Azure SQL Database</span>
+            </div>
+          </div>
+
+          <div class="card reveal" data-delay="3">
+            <h3 style="margin-top:0;">Cloud (Azure)</h3>
+            <div class="tags">
+              <span class="tag">Microsoft Fabric</span>
+              <span class="tag">Azure Data Factory</span>
+              <span class="tag">Synapse Analytics</span>
+              <span class="tag">Databricks</span>
+              <span class="tag">Key Vault</span>
+              <span class="tag">Stream Analytics</span>
+              <span class="tag">Event Hubs</span>
+            </div>
+          </div>
+
+          <div class="card reveal" data-delay="4">
+            <h3 style="margin-top:0;">Tools & Methodologies</h3>
+            <div class="tags">
+              <span class="tag">Git</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Linux</span>
+              <span class="tag">Dimensional Data Modelling</span>
+              <span class="tag">BeautifulSoup4</span>
+            </div>
+          </div>
+
+          <div class="card reveal" data-delay="1">
+            <h3 style="margin-top:0;">Big Data & ETL</h3>
+            <div class="tags">
+              <span class="tag">PySpark</span>
+              <span class="tag">Apache Airflow</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications" class="reveal" data-delay="1">
+        <div class="sectionHead">
+          <h2>Certifications</h2>
+          <div class="hint">Industry credentials</div>
+        </div>
+
+        <div class="grid2">
+          <article class="card reveal" data-delay="1">
+            <div class="cardTop">
+              <h3>Fabric Data Engineer Associate (DP-700)</h3>
+              <span class="pill">Microsoft</span>
+            </div>
+            <p class="meta">Microsoft Certified — validates expertise in designing and implementing enterprise-scale data solutions on Microsoft Fabric.</p>
+            <div class="tags">
+              <span class="tag">Microsoft Fabric</span>
+              <span class="tag">Data Lakehouse</span>
+              <span class="tag">Real-time Intelligence</span>
+            </div>
+            <div style="margin-top:12px;">
+              <a class="btn" href="https://learn.microsoft.com/api/credentials/share/en-us/ShivamDubey-7256/8B53C092106B45E4?sharingId=7010AFC8DEE83D1C" target="_blank" rel="noopener">View Credential →</a>
+            </div>
+          </article>
+
+          <article class="card reveal" data-delay="2">
+            <div class="cardTop">
+              <h3>Astronomer Certification for Apache Airflow 3 Fundamentals</h3>
+              <span class="pill">Astronomer</span>
+            </div>
+            <p class="meta">Astronomer Certified — demonstrates proficiency in Apache Airflow pipeline orchestration fundamentals.</p>
+            <div class="tags">
+              <span class="tag">Apache Airflow</span>
+              <span class="tag">Pipeline Orchestration</span>
+            </div>
+            <div style="margin-top:12px;">
+              <a class="btn" href="https://www.credly.com/badges/c5723127-2239-4396-9d45-524a67b0c350/public_url" target="_blank" rel="noopener">View Credential →</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="reveal" data-delay="1">
+        <div class="sectionHead">
+          <h2>Education</h2>
+          <div class="hint">Academic foundation</div>
+        </div>
+
+        <div class="grid2">
+          <article class="card reveal" data-delay="1">
+            <h3 style="margin-top:0;">Integrated M.Tech — AI & Data Science</h3>
+            <p class="meta">School of Data Science and Forecasting, DAVV, Indore • 2022–2027</p>
+            <div class="tags">
+              <span class="tag">DBMS</span>
+              <span class="tag">Data Warehousing</span>
+              <span class="tag">Big Data</span>
+              <span class="tag">Cloud</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="leadership" class="reveal" data-delay="1">
+        <div class="sectionHead">
+          <h2>Leadership & Activity</h2>
+          <div class="hint">Community + mentoring</div>
+        </div>
+
+        <div class="grid2">
+          <article class="card reveal" data-delay="1">
+            <div class="cardTop">
+              <h3>Cloud Lead — Google Developer Groups (GDG)</h3>
+              <span class="pill">Leadership</span>
+            </div>
+            <p class="meta">Led sessions and helped students get started with cloud fundamentals and hands‑on projects.</p>
+            <div class="tags">
+              <span class="tag">Leadership</span>
+              <span class="tag">Mentoring</span>
+              <span class="tag">Community</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="reveal" data-delay="1">
+        <div class="sectionHead">
+          <h2>Contact</h2>
+          <div class="hint">Email or LinkedIn works best</div>
+        </div>
+
+        <div class="grid2">
+          <div class="card reveal" data-delay="1">
+            <h3 style="margin-top:0;">Reach me</h3>
+            <p class="meta" style="margin-top:0;">I’m open to internships and entry-level Data Engineering roles.</p>
+            <div class="tags">
+              <a class="tag" href="mailto:shivamdubey2310711@gmail.com">shivamdubey2310711@gmail.com</a>
+              <a class="tag" href="https://github.com/shivamdubey2310" target="_blank" rel="noopener">GitHub</a>
+              <a class="tag" href="https://www.linkedin.com/in/shivamdubey-20" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+          </div>
+
+          <div class="card reveal" data-delay="2">
+            <h3 style="margin-top:0;">Quick message</h3>
+            <p class="meta">Click to email me with a pre-filled subject.</p>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <a class="btn primary" href="mailto:shivamdubey2310711@gmail.com?subject=Portfolio%20Inquiry">Email me</a>
+              <a class="btn" href="../ShivamDubey.pdf" target="_blank" rel="noopener">Resume</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="reveal" data-delay="1">
+        <div>© <span id="year"></span> Shivam Dubey</div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="./assets/app.js"></script>
+</body>
+</html>

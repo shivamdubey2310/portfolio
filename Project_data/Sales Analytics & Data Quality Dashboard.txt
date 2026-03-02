@@ -1,0 +1,24 @@
+Sales Analytics & Data Quality Dashboard
+
+Overview
+A comprehensive Power BI solution that transforms raw sales data into actionable KPIs and interactive visualizations using a robust Power Query ETL pipeline.
+
+Tech Stack
+- Visualization: Microsoft Power BI
+- ETL: Power Query (M Language)
+- Data Source: CSV / Synthetic Data
+- Analysis: DAX (Data Analysis Expressions)
+
+The Challenge
+Raw transactional data is rarely "dashboard-ready." It often contains inconsistent formatting, combined fields (e.g., "Firstname Lastname" in one cell), and quality errors that lead to inaccurate reporting. The goal was to build a self-service dashboard that not only visualizes the data but guarantees its accuracy through a rigorous cleaning process.
+
+The Solution
+I implemented a "Data Preparation First" approach:
+- Power Query ETL: Built a reproducible data cleaning workflow to handle null removal, type casting, and column splitting (e.g., extracting "Time" from "DateTime" and "First Name" from "Full Name").
+- Data Modeling: Transformed a flat file into a clean schema suitable for aggregation, optimizing the dataset for performance.
+- Interactive UX: Designed a user-friendly interface with dynamic slicers (Date, Region) and drill-down capabilities, allowing users to investigate profit trends and product costs granularly.
+
+Key Highlights
+- Full-Stack Data Awareness: Proves I can handle the "Last Mile" of data engineering—delivering clean data to business users.
+- Data Quality Enforcement: Implemented specific rules to filter out error rows and duplicates before they could skew the final metrics.
+- Visual Storytelling: Moved beyond simple tables to create KPIs and Trend Lines that answer business questions instantly.

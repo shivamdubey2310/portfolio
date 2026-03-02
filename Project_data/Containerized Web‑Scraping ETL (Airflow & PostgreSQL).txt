@@ -1,0 +1,24 @@
+Containerized Web‑Scraping ETL (Airflow & PostgreSQL)
+
+Overview
+A containerized data extraction pipeline that scrapes unstructured job board HTML, normalizes the data, and loads it into PostgreSQL using Airflow and Docker.
+
+Tech Stack
+- Orchestration: Apache Airflow (managed via Astro CLI)
+- Infrastructure: Docker
+- Extraction: Python (BeautifulSoup4, Requests)
+- Storage: PostgreSQL
+
+The Challenge
+Valuable market data often exists outside of clean APIs, locked in unstructured HTML pages. The challenge was to build a reliable system to harvest this data without manual intervention, handling common scraping hurdles like pagination, inconsistent HTML formatting, and duplicate entries.
+
+The Solution
+I engineered a containerized Airflow pipeline to turn raw web pages into a structured database:
+- Advanced Scraping: Developed Python scripts to traverse pagination logic on python.org, robustly parsing HTML tags into structured datasets using BeautifulSoup.
+- Containerized Workflow: Utilized Docker and the Astro CLI to containerize the environment, ensuring the pipeline runs consistently across different machines (eliminating "it works on my machine" issues).
+- Idempotent Loading: Designed the loading stage to prevent duplicates during daily runs, ensuring the database acts as a clean historical record of job postings.
+
+Key Highlights
+- Raw HTML to SQL: Demonstrated the ability to convert messy, unstructured web content into a strict Relational Schema (jobs, job_type).
+- Modern Airflow Deployment: Showcased familiarity with the Astro CLI, the industry-standard tool for managing Airflow in production-like environments.
+- Modular Architecture: Decoupled the Extraction, Transformation (Pandas), and Loading (SQLAlchemy) logic for easier debugging and maintenance.

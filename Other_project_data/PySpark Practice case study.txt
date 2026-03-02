@@ -1,0 +1,24 @@
+PySpark Practice case study
+
+Overview
+A structured PySpark practice suite featuring 50 progressive data engineering problems (Easy to Advanced) based on a real-world Electric Vehicle specifications dataset.
+
+Tech Stack
+- Processing: Apache Spark (PySpark)
+- Environment: Jupyter Notebook
+- Key Concepts: Window Functions, UDFs, Aggregations
+- Format: Educational / Practice Set
+
+The Challenge
+Learning PySpark often involves abstract theory without enough hands-on practice on realistic data. The goal was to create a comprehensive problem set that mimics real-world data engineering interviews and tasks, covering edge cases like null handling, schema enforcement, and complex analytical windowing functions.
+
+The Solution
+I engineered a complete "Practice Platform" for Spark developers:
+- Curated Dataset: Cleaned and structured a raw CSV dataset of 2025 Electric Vehicle specs (Range, Battery Capacity, Efficiency) to serve as a rich base for querying.
+- Progressive Complexity: Designed a 50-question roadmap that starts with basic DataFrame operations (filter, select) and escalates to advanced topics like pivot, rank() window functions, and performance optimization techniques (cache).
+- Reference Implementation: Provided optimized, commented PySpark solutions for every problem, serving as a "Gold Standard" reference for peer learners.
+
+Key Highlights
+- Technical Depth: Demonstrates mastery of the entire PySpark DataFrame API, not just simple SQL wrappers.
+- Educational Value: Positions me as a subject matter expert who can structure learning paths for others.
+- Data Cleaning: Highlights specific skills in handling "dirty" real-world data (casting types, handling missing values) before analysis.

@@ -1,0 +1,24 @@
+End-to-End Medallion ETL Pipeline via Microsoft Fabric
+
+Overview
+A production-grade batch ETL pipeline implementing the industry-standard Bronze-Silver-Gold architecture to process air quality data using Apache Spark and Delta Lake on Microsoft Fabric.
+
+Tech Stack
+- Platform: Microsoft Fabric (Data Engineering)
+- Processing: Apache Spark (PySpark)
+- Storage: Delta Lake (Bronze/Silver/Gold Tables)
+- Architecture: Medallion (Multi-hop)
+
+The Challenge
+Raw data from external APIs is often messy, duplicated, and unoptimized for reporting. Loading this directly into a dashboard leads to slow performance and inaccurate insights. The goal was to build a structured "Lakehouse" architecture that rigorously cleanses and organizes data through progressive layers of quality.
+
+The Solution
+I designed a multi-hop pipeline using Fabric Notebooks to enforce data quality stages:
+- Bronze Layer (Ingest): Built a raw ingestion engine using Python Requests to fetch AirNow API forecasts, converting JSON responses into Spark DataFrames and persisting them as raw Delta Tables.
+- Silver Layer (Curate): Implemented a transformation logic to standardize data types, trim whitespace, and perform deduplication based on composite keys (Date + ReportingArea), ensuring a trusted "single source of truth."
+- Gold Layer (Aggregate): Created a business-level aggregation layer that calculates average AQI metrics per location, optimized for direct consumption by BI tools.
+
+Key Highlights
+- Lakehouse Architecture: Demonstrated mastery of the Medallion Architecture, the standard design pattern for modern data platforms.
+- Spark Optimization: Leveraged the distributed power of Apache Spark (Fabric Runtime) to handle data processing efficiently, ensuring the pipeline can scale to massive datasets.
+- Delta Lake Features: Utilized Delta Lake capabilities for ACID transactions, ensuring that downstream reports never see partial or corrupt data loads.

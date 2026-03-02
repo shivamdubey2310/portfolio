@@ -1,0 +1,23 @@
+MongoDB Practice case study
+
+Overview
+A comprehensive data analysis suite solving 60 complex business queries on an 81,000-record dataset using the MongoDB Aggregation Framework and PyMongo.
+
+Tech Stack
+- Database: MongoDB (NoSQL)
+- Querying: Aggregation Framework (Pipelines)
+- Language: Python (PyMongo)
+- Environment: Jupyter Notebooks
+
+The Challenge
+Business data often comes in nested, non-relational formats (JSON) that standard SQL cannot easily query. The challenge was to extract deep insights—such as "identifying sectors with the highest violation rates per borough"—from a massive, semi-structured dataset of 81,000 NYC inspection records without flattening the data first.
+
+The Solution
+I engineered a series of progressively complex analytical pipelines:
+- Advanced Aggregation: Mastered the MongoDB Aggregation Framework ($match, $group, $unwind, $project) to perform complex statistical analysis directly within the database engine.
+- Geospatial & Text Search: Implemented queries to filter businesses by location and perform efficient text-based searches across nested fields.
+- Python Integration: Used PyMongo to bridge the database with Python, enabling programmatic data loading and automated query execution for reporting.
+
+Key Highlights
+- Complex Problem Solving: Solved "Hard" level questions involving multi-stage pipelines, replicating SQL JOIN and HAVING logic in a NoSQL environment.
+- Performance Optimization: Learned to optimize query performance by structuring pipelines to filter data early ($match before $group).

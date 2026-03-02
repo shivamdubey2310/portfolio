@@ -1,0 +1,24 @@
+Automated Linux‑Native ETL (Bash, Python & PostgreSQL)
+
+Overview
+A lightweight, automated ETL workflow that orchestrates data extraction from REST APIs via Bash and processes complex JSON into a normalized PostgreSQL database using Python.
+
+Tech Stack
+- Orchestration & Extraction: Bash (Shell Scripting), Curl, Cron
+- Transformation: Python (Pandas)
+- Database/Loading: PostgreSQL, SQLAlchemy
+- Source: REST API (RandomUser.me)
+
+The Challenge
+For lightweight data pipelines, deploying heavy orchestration tools like Airflow can be overkill and resource-intensive. The objective was to build a reliable, low-overhead pipeline capable of ingesting semi-structured API data, normalizing it, and loading it into a relational database using native OS-level tools.
+
+The Solution
+I engineered a hybrid pipeline combining the speed of Shell scripting with the data manipulation power of Python:
+- Hybrid Orchestration: Utilized Bash scripts to handle API calls (curl) and raw data management, serving as the "glue" code for the pipeline.
+- Relational Normalization: Developed Python scripts to parse nested JSON responses and normalize them into a structured schema (Person, Location, Login tables) to ensure data consistency.
+- Automated Scheduling: Implemented Linux Crontab jobs to execute the workflow daily, ensuring fresh data availability without manual intervention.
+
+Key Highlights
+- Cost-Effective Architecture: Designed a "serverless-like" efficiency running on a standard Linux environment without the overhead of container orchestration.
+- Full Observability: Built a comprehensive logging system (pipeline.log, cron.log) to track execution status and debug failures in real-time.
+- Schema Design: Successfully mapped complex hierarchical JSON data into a strictly typed PostgreSQL relational schema.

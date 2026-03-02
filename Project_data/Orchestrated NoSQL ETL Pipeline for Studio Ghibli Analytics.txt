@@ -1,0 +1,24 @@
+Orchestrated NoSQL ETL Pipeline for Studio Ghibli Analytics
+
+Overview
+A hybrid ETL workflow capable of running as a standalone script or an Airflow DAG that aggregates film, character, and vehicle data into a MongoDB document store.
+
+Tech Stack
+- Orchestration: Apache Airflow (Astro CLI)
+- Database: MongoDB (NoSQL)
+- Language: Python (Pandas)
+- Source: Studio Ghibli REST API
+
+The Challenge
+Connecting disjointed datasets from REST APIs (e.g., matching "People" to "Films" via URLs) often results in inefficient, repetitive API calls. The goal was to build a system that could handle these relationships efficiently while providing the flexibility to run locally for development or orchestrated for production.
+
+The Solution
+I designed a pipeline that prioritizes development velocity and data availability:
+- Hybrid Execution Model: Architected the codebase to run in two modes: a lightweight standalone script for rapid local testing, and a fully containerized Astro/Airflow DAG for scheduled production runs.
+- Smart Caching Strategy: Implemented a local JSON caching layer (raw_json/) to minimize API pressure during development and ensure data persistence even if the API goes down.
+- NoSQL Integration: Loaded transformed data into MongoDB, leveraging its flexible schema to store complex nested relationships (e.g., a Character document embedding their specific Vehicle details) without rigid joins.
+
+Key Highlights
+- Astro CLI: Demonstrated proficiency with modern Airflow tooling (Astro), showing I am up-to-date with current industry standards.
+- Robust Logging: Built a comprehensive logging system (ETL_log.log) that tracks every stage of the extraction and loading process for easier debugging.
+- API Relationship Mapping: Successfully joined disparate API endpoints (Films, Species, Locations) into a cohesive analytical dataset.

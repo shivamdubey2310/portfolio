@@ -1,0 +1,25 @@
+Real-Time Delta Lake Streaming Pipeline (Spark Structured Streaming)
+
+Overview
+A fault-tolerant streaming framework that dynamically validates and ingests raw CSV files into ACID-compliant Delta Lake tables using Spark Structured Streaming.
+
+Tech Stack
+- Processing: Apache Spark (Structured Streaming)
+- Storage: Delta Lake (ACID Transactions)
+- Language: Python (PySpark)
+- Fault Tolerance: Spark Checkpointing
+
+The Challenge
+In data lakes, "Schema Drift" (changing file structures) and partial write failures can corrupt datasets, especially when processing continuous streams of raw files. The goal was to build a robust ingestion engine that could handle high-velocity file streams without locking the table or creating "dirty" reads for downstream users.
+
+The Solution
+I built a metadata-driven ingestion pipeline that automates the "Bronze" layer of a data lake:
+- Structured Streaming: Replaced traditional batch jobs with a Spark Structured Streaming listener that detects and processes new files the instant they land in the directory.
+- Dynamic Schema Enforcement: Developed a helper module (schema.py) to generate JSON-based schema definitions, preventing data type mismatches before the data even hits the cluster.
+- ACID Guarantees: Utilized Delta Lake as the storage layer to ensure that even if the streaming job crashes mid-write, the data remains consistent (Atomic writes).
+- Fault Tolerance: Implemented Spark Checkpointing, allowing the pipeline to restart exactly where it left off after a failure or system update.
+
+Key Highlights
+- Stream Processing: Demonstrated the ability to write "Micro-batch" processing code, a step up from standard batch ETL.
+- Metadata Management: The separation of schema definition (JSON) from the processing logic (Main.py) shows a mature, modular coding style.
+- Reliability: Focused on "Checkpointing" and recovery strategies, which are often overlooked in student projects but essential in production.

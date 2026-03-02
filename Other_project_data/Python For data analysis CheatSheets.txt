@@ -1,0 +1,22 @@
+Python For data analysis CheatSheets
+
+Overview
+A curated open-source collection of comprehensive quick-reference guides for the core Python data stack (NumPy, Pandas, Matplotlib, Seaborn), designed to accelerate development workflows for data professionals.
+
+Tech Stack
+- Libraries: Pandas, NumPy, Matplotlib, Seaborn
+- Format: Technical Documentation (PDF)
+- Domain: Data Analysis & Visualization
+
+The Challenge
+The Python data ecosystem is vast, with thousands of functions across libraries like Pandas and Matplotlib. Memorizing every syntax variation is impossible, and constantly searching documentation slows down development. The goal was to create a centralized, offline-accessible resource to bridge the "syntax gap."
+
+The Solution
+I compiled and structured high-density reference guides:
+- Core Operations: Distilled complex library documentation into scannable cheatsheets covering essential ETL tasks (slicing/dicing in Pandas, array manipulation in NumPy).
+- Visualization Guides: Aggregated best practices for plotting with Matplotlib and Seaborn, providing quick lookups for styling, subplots, and statistical graphs.
+- Community Resource: Open-sourced the collection to aid fellow developers and students in streamlining their coding process.
+
+Key Highlights
+- Technical Mastery: Creating accurate cheatsheets requires a deep understanding of the libraries to know what is important to include.
+- Developer Productivity: Shows a focus on efficiency and tooling—traits of a strong engineer.

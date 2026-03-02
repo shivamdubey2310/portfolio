@@ -1,0 +1,24 @@
+Enterprise University Management System & Relational Database Design
+
+Overview
+A fully normalized, ACID-compliant relational database architecture designed to manage complex university operations, from student enrollment to faculty scheduling.
+
+Tech Stack
+- Database: PostgreSQL 13+
+- Design: Entity-Relationship Diagrams (ERD)
+- Language: Advanced SQL (Triggers, Stored Procedures)
+- Documentation: Technical Specifications
+
+The Challenge
+Academic environments require managing highly interconnected data with strict rules (e.g., a room cannot be double-booked, a student cannot enroll without prerequisites). A poorly designed database leads to data anomalies and corruption. The goal was to build a rigid, error-proof OLTP (Online Transaction Processing) system that enforces these business rules at the database level.
+
+The Solution
+I architected a normalized (3NF) database schema to ensure data integrity and minimize redundancy:
+- Complex Modeling: Designed an 11-table schema with over 25 foreign key relationships, correctly handling Many-to-Many relationships (e.g., Students ↔ Classes) via junction tables.
+- Business Logic Layer: Implemented SQL Triggers and Functions to automate validation (e.g., checking classroom capacity before enrollment) and enforce referential integrity.
+- Reporting Views: Created materialized views to abstract complex joins, providing instant access to high-GPA student lists and department workload statistics.
+
+Key Highlights
+- OLTP vs. OLAP: Demonstrated strong understanding of Transactional Design (3NF), complementing my Data Warehousing skills.
+- Enterprise Documentation: Produced over 6,000 lines of technical documentation, including Data Dictionaries and Field Specifications—a critical skill for working in large corporate teams.
+- Resource Management: Modeled real-world constraints like classroom scheduling conflicts directly in SQL.

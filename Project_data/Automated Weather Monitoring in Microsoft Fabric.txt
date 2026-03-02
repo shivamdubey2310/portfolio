@@ -1,0 +1,26 @@
+Automated Weather Monitoring in Microsoft Fabric
+
+Overview
+A fully managed, end-to-end streaming solution leveraging the unified Microsoft Fabric ecosystem to ingest, process, and visualize live weather telemetry with sub-second latency.
+
+Tech Stack
+- Platform: Microsoft Fabric (SaaS)
+- Ingestion & Processing: Eventstream
+- Storage: Eventhouse (KQL Database)
+- Alerting: Data Activator (Reflex)
+- Visualization: Real-Time Dashboard
+
+The Challenge
+Traditional streaming architectures often require stitching together complex, disparate services (e.g., Kafka, Spark Streaming, and separate alerting tools), leading to high maintenance overhead. The objective was to demonstrate a Unified Analytics approach, building a robust real-time pipeline entirely within a single SaaS environment without managing underlying infrastructure.
+
+The Solution
+I architected a seamless "Ingest-to-Insight" flow within a single Fabric workspace:
+- No-Code Ingestion: Configured a native Weather Connector to continuously pull live atmospheric data for Delhi.
+- Stream Routing: Utilized Eventstreams to capture, transform, and route high-velocity data into storage without writing complex glue code.
+- Real-Time Storage: Provisioned an Eventhouse to store the streaming data, enabling lightning-fast querying using KQL (Kusto Query Language).
+- Automated Action: Implemented Data Activator to monitor data patterns in real-time, triggering automatic alerts when temperatures breached critical thresholds.
+
+Key Highlights
+- Next-Gen Tech: Demonstrated early adoption and competency in Microsoft Fabric, the latest evolution in Microsoft's data stack.
+- Event-Driven Architecture: Moved beyond static reporting to active intelligence with automated triggers and alerts.
+- Live Visualization: Built a dashboard that updates instantly as new events arrive, providing true real-time situational awareness.

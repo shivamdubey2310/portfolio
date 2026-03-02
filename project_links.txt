@@ -1,0 +1,31 @@
+Automated Weather Monitoring in Microsoft Fabric - https://github.com/shivamdubey2310/Fabric-realtime-weather
+
+End-to-End Medallion ETL Pipeline via Microsoft Fabric - https://github.com/shivamdubey2310/AirNow_ETL_Fabric
+
+Automated E-commerce Data Warehouse & Star Schema Design - https://github.com/shivamdubey2310/E-commerce_data_warehouse
+
+Automated PokeAPI ETL Pipeline with Apache Airflow & MySQL - https://github.com/shivamdubey2310/PokeAPI_ETL
+
+Real-Time Delta Lake Streaming Pipeline (Spark Structured Streaming) - https://github.com/shivamdubey2310/CSV_Streams_into_Delta_lake
+
+Automated Linux‑Native ETL (Bash, Python & PostgreSQL) - https://github.com/shivamdubey2310/ETL_Using_Bash
+
+Containerized Web‑Scraping ETL (Airflow & PostgreSQL) - https://github.com/shivamdubey2310/WebScraping_project_bs4
+
+
+Automated Tech‑News ETL (PySpark & MongoDB Atlas) - https://github.com/shivamdubey2310/News_API_ETL
+
+
+Enterprise University Management System & Relational Database Design - https://github.com/shivamdubey2310/University_db
+
+
+Orchestrated NoSQL ETL Pipeline for Studio Ghibli Analytics - https://github.com/shivamdubey2310/Studio_Ghibli_ETL
+
+
+Sales Analytics & Data Quality Dashboard - https://github.com/shivamdubey2310/Sales-Dashboard
+
+Scalable Spotify Hit Predictor (PySpark MLlib & Streamlit) - https://github.com/shivamdubey2310/Hit_song_predictor
+
+Self‑Service API Data Ingestion Utility (Streamlit) - https://github.com/shivamdubey2310/API_data_extractor
+
+

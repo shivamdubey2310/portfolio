@@ -1,0 +1,24 @@
+Automated Tech‑News ETL (PySpark & MongoDB Atlas)
+
+Overview
+A cloud-native data pipeline that aggregates daily technology news via APIs, processes data using PySpark for scalability, and archives it in a MongoDB Atlas document store.
+
+Tech Stack
+- Processing: PySpark (Spark SQL)
+- Database: MongoDB Atlas (NoSQL)
+- Intermediate Storage: Parquet
+- Source: NewsAPI
+
+The Challenge
+News data is inherently semi-structured and voluminous, often requiring scalable processing frameworks rather than traditional scripts. The goal was to build a system capable of ingesting raw API streams, optimizing the storage format for performance, and retaining the data flexibility required for unstructured text analysis.
+
+The Solution
+I designed a "Big Data ready" architecture that separates compute from storage:
+- Scalable Transformation: Utilized PySpark instead of standard Pandas, ensuring the transformation logic can scale to distributed clusters if data volume increases (e.g., processing millions of articles).
+- Columnar Optimization: Implemented a staging layer using Parquet files, which compresses data and speeds up read operations compared to raw JSON or CSV.
+- NoSQL Loading: Ingested the processed data into MongoDB Atlas, leveraging its document-based model to efficiently store variable-length news content and metadata.
+
+Key Highlights
+- Cloud Integration: Connected local processing scripts to a cloud-hosted database (MongoDB Atlas), mimicking a hybrid-cloud environment.
+- Format Efficiency: Demonstrated knowledge of modern data formats by converting raw JSON extraction into optimized Parquet storage before final loading.
+- Automated Ingestion: Deployed Cron schedulers to maintain a "fresh" data lake of daily headlines without manual execution.

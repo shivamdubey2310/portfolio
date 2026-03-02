@@ -1,0 +1,24 @@
+Scalable Spotify Hit Predictor (PySpark MLlib & Streamlit)
+
+Overview
+An interactive machine learning application that predicts song popularity based on audio telemetry (tempo, energy, danceability) using a distributed PySpark ML pipeline served via a Streamlit web interface.
+
+Tech Stack
+- Processing & ML: Apache Spark (MLlib, PySpark)
+- App Framework: Streamlit
+- Algorithm: Linear Regression
+- Feature Engineering: VectorAssembler, OneHotEncoder
+
+The Challenge
+Machine Learning models often remain "stuck" in Jupyter Notebooks, inaccessible to end-users. The challenge was to operationalize a predictive model—taking it from raw data processing in a distributed framework (Spark) to a user-friendly application where non-technical users could interact with the model in real-time.
+
+The Solution
+I built an end-to-end ML application that bridges the gap between big data processing and user interaction:
+- Distributed Training Pipeline: Leveraged PySpark MLlib to build a robust pipeline involving StringIndexer, OneHotEncoder, and VectorAssembler to normalize complex Spotify audio features.
+- Model Persistence: Implemented model serialization to save the trained Spark pipeline, allowing the application to load the pre-trained logic instantly without retraining.
+- Interactive Frontend: Developed a Streamlit web app that acts as the serving layer, allowing users to adjust sliders for abstract features like "Acousticness" or "Valence" and receive instant popularity scores.
+
+Key Highlights
+- Machine Learning Engineering: Demonstrated the ability to wrap an ML algorithm into a deployable product, a key skill for ML Engineer roles.
+- Spark ML: Showcased familiarity with Spark's Machine Learning library, proving I can handle ML tasks on large datasets that wouldn't fit in standard memory.
+- Full-Stack Data App: Built the entire lifecycle: Data Cleaning → Model Training → User Interface.

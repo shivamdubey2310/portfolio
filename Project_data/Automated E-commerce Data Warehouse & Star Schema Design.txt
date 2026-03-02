@@ -1,0 +1,24 @@
+Automated E-commerce Data Warehouse & Star Schema Design
+
+Overview
+Designed a dimensional data warehouse from scratch, engineering a Python-based ETL pipeline to process transactional data into a Star Schema on MySQL for retail analytics.
+
+Tech Stack
+- Language: Python (Pandas, Faker)
+- Database: MySQL
+- ORM/Connectivity: SQLAlchemy
+- Modeling: Star Schema (Dimensional Modeling)
+
+The Challenge
+To analyze sales performance and customer behavior effectively, a standard transactional database (OLTP) is often insufficient. The goal was to build an analytical backend (OLAP) capable of handling complex queries regarding sales trends, inventory turnover, and marketing promotion effectiveness without impacting production systems.
+
+The Solution
+I architected a complete warehousing solution focusing on data integrity and analytical speed:
+- Dimensional Modeling: Designed a Star Schema consisting of 6 Dimension tables (Customer, Product, Store, Date, etc.) and 2 Fact tables to optimize query performance.
+- Synthetic Data Generation: Developed a custom script using the Faker library to simulate realistic, high-volume retail datasets for stress testing.
+- ETL Automation: Built Python scripts using Pandas for transformation and SQLAlchemy for database interaction, automating the flow of data from raw CSV staging areas into the warehouse.
+
+Key Highlights
+- Advanced Modeling: Implemented a Factless Fact Table (Customer_Promotion_Event) to track non-transactional event coverage, a key requirement for marketing analysis.
+- Infrastructure as Code: Utilized SQL scripts for automated schema creation and environment variable management (.env) for secure database credentials.
+- Data Integrity: Enforced strict schema validation during the transformation phase to ensure high-quality data ingestion.

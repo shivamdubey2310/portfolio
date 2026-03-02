@@ -1,0 +1,10 @@
+1. Python For data analysis CheatSheets - https://github.com/shivamdubey2310/python_for_data_analysis_cheatsheets
+
+2. Essential Bash Scripts for Data Engineers - https://github.com/shivamdubey2310/Bash_Scripts_for_DEs
+
+3. PySpark Practice case study - https://github.com/shivamdubey2310/pySpark_practice
+
+4. SQL Practice Problems - https://github.com/shivamdubey2310/57_sql_practice_problems/
+
+5. MongoDB Practice case study - https://github.com/shivamdubey2310/Mongodb_practice_questions
+

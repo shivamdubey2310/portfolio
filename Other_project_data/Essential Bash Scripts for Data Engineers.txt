@@ -1,0 +1,23 @@
+Essential Bash Scripts for Data Engineers
+
+Overview
+A library of 20 modular, production-ready shell scripts automating essential data engineering maintenance tasks, from log rotation and S3 syncing to CSV schema validation.
+
+Tech Stack
+- Language: Bash / Shell Scripting
+- Tools: AWS CLI, jq, Parquet-tools
+- OS: Linux / Unix
+
+The Challenge
+Data engineering isn't just about big pipelines; it's about the "glue code" that keeps systems running. Engineers often waste time rewriting ad-hoc scripts for backups, cleanup, or file transfers. The goal was to standardize these routine operations into a reusable, parameterized toolkit to reduce toil and human error.
+
+The Solution
+I engineered a collection of utility scripts handling three core domains:
+- Data Validation: Scripts that use awk and sed to validate CSV headers against schemas or detect null values in large files without loading them into memory.
+- Infrastructure Maintenance: Automated modules for database backups (pg_dump), log compression/rotation, and disk usage monitoring with alert triggers.
+- Cloud Integration: Wrappers for the AWS CLI to handle robust S3 synchronization and jq for formatting complex JSON logs for debugging.
+
+Key Highlights
+- System Administration: Demonstrates deep familiarity with the Linux command line, a non-negotiable skill for debugging production servers.
+- Tool Proficiency: Showcases advanced usage of command-line processors like jq (JSON) and parquet-tools (Big Data formats).
+- Modularity: Scripts are designed to be "pluggable" into larger Airflow DAGs or Cron jobs.

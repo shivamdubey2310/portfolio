@@ -1,0 +1,24 @@
+Self‑Service API Data Ingestion Utility (Streamlit)
+
+Overview
+A lightweight "Data-as-a-Service" web application built with Streamlit that allows non-technical users to fetch, preview, and download raw JSON data from public REST APIs without writing a single line of code.
+
+Tech Stack
+- Frontend/App: Streamlit (Python)
+- Backend: Python (Requests)
+- Data Format: JSON
+- Architecture: MVC (Model-View-Controller) Pattern
+
+The Challenge
+Data often lives behind APIs, accessible only to engineers who know how to write scripts or use command-line tools like curl. This creates a bottleneck where business users constantly have to ask engineers to "just pull this file for me." The goal was to remove this dependency by building a self-service tool.
+
+The Solution
+I developed a GUI-based extraction engine using Streamlit:
+- User-Friendly Interface: Built a clean web form where users simply paste an API URL, and the app handles the complex HTTP request logic (headers, timeouts, error handling) in the background.
+- Automated File Handling: Engineered a backend system that sanitizes the input URL, extracts the domain name, and automatically saves the response as a timestamped JSON file to a local "Data Lake" directory (raw_json/).
+- Immediate Feedback: Implemented a "Preview" feature that parses and displays the nested JSON structure instantly, allowing users to verify the data before downloading.
+
+Key Highlights
+- Internal Tooling: Demonstrates the ability to build "Internal Developer Platforms" (IDP) or utilities that increase the productivity of the entire data team.
+- Error Handling: Features robust exception management (e.g., catching 404/500 errors) to guide users when an API endpoint is invalid.
+- Rapid Prototyping: Showcases how quickly I can turn a Python script into a deployable web app using Streamlit.

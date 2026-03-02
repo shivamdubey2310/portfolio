@@ -1,0 +1,23 @@
+SQL Practice Problems
+
+Overview
+A repository of 57 progressive SQL challenges—ranging from basic retrieval to advanced reporting—solved using T-SQL on Microsoft SQL Server to demonstrate query mastery.
+
+Tech Stack
+- Database: Microsoft SQL Server
+- Language: T-SQL
+- Environment: Jupyter Notebooks
+- Concepts: Joins, Subqueries, Date Functions
+
+The Challenge
+Many data students know basic SELECT * FROM, but struggle with real-world business questions that require complex logic (e.g., "Find the top 5 customers by revenue per quarter"). The goal was to bridge the gap between academic syntax and "on-the-job" problem solving.
+
+The Solution
+I worked through a comprehensive problem set designed to simulate real business scenarios:
+- Progressive Difficulty: Solved problems categorized into Beginner, Intermediate, and Advanced, covering everything from simple filtering to complex multi-table joins.
+- Advanced Logic: Applied advanced T-SQL concepts to solve edge cases, such as handling date gaps in reporting and calculating running totals without window functions (and with them).
+- Documentation: Documented every solution in Jupyter Notebooks (Solutions.ipynb), creating a searchable "cookbook" of SQL patterns for future reference.
+
+Key Highlights
+- Problem Solving: Proves the ability to translate a plain-English business question (e.g., "Who are our late-paying customers?") into executable SQL code.
+- T-SQL Proficiency: Shows specific familiarity with Microsoft SQL Server syntax, which is distinct from MySQL or PostgreSQL.
