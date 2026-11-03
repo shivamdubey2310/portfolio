@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO(confirm): site URL. Assumes GitHub Pages project site; change if you use a custom domain.
+Sitemap: https://shivamdubey2310.github.io/portfolio/sitemap.xml

@@ -4,29 +4,107 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#0f766e" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)" />
   <title>Projects — Shivam Dubey, Data Engineer</title>
-  <meta name="description" content="Data engineering projects by Shivam Dubey: CDC lakehouse, Medallion ETL, real-time streaming, warehousing and orchestration on Azure, Microsoft Fabric, Databricks, Spark and Airflow." />
+  <meta name="description" content="Data engineering projects by Shivam Dubey: near real-time CDC lakehouse, Medallion ETL, real-time streaming and Airflow pipelines on Azure, Microsoft Fabric, Databricks and Spark." />
+  <meta name="author" content="Shivam Dubey" />
+  <!-- TODO(confirm): canonical/OG URLs assume GitHub Pages at https://shivamdubey2310.github.io/portfolio/. Update if you use a custom domain. -->
+  <link rel="canonical" href="https://shivamdubey2310.github.io/portfolio/projects.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Shivam Dubey — Data Engineer" />
+  <meta property="og:title" content="Projects — Shivam Dubey, Data Engineer" />
+  <meta property="og:description" content="Data engineering projects by Shivam Dubey: near real-time CDC lakehouse, Medallion ETL, real-time streaming and Airflow pipelines on Azure, Microsoft Fabric, Databricks and Spark." />
+  <meta property="og:url" content="https://shivamdubey2310.github.io/portfolio/projects.html" />
+  <meta property="og:image" content="https://shivamdubey2310.github.io/portfolio/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Shivam Dubey, Data Engineer: 50M+ daily records, 99.9% pipeline reliability, 45% lower query latency, DP-700 certified." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Projects — Shivam Dubey, Data Engineer" />
+  <meta name="twitter:description" content="Data engineering projects by Shivam Dubey: near real-time CDC lakehouse, Medallion ETL, real-time streaming and Airflow pipelines on Azure, Microsoft Fabric, Databricks and Spark." />
+  <meta name="twitter:image" content="https://shivamdubey2310.github.io/portfolio/assets/og-image.png" />
+  <meta name="twitter:image:alt" content="Shivam Dubey, Data Engineer: 50M+ daily records, 99.9% pipeline reliability, 45% lower query latency, DP-700 certified." />
+
+  <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="./assets/favicon.ico" sizes="48x48" />
+  <link rel="apple-touch-icon" href="./assets/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="./site.webmanifest" />
   <link rel="stylesheet" href="./assets/styles.css" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://shivamdubey2310.github.io/portfolio/#person",
+  "name": "Shivam Dubey",
+  "jobTitle": "Data Engineer",
+  "url": "https://shivamdubey2310.github.io/portfolio/",
+  "email": "mailto:shivamdubey2310711@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Indore",
+    "addressCountry": "IN"
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Bizfy Solutions"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "School of Data Science and Forecasting, DAVV, Indore"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/shivam-dubey20",
+    "https://github.com/shivamdubey2310"
+  ],
+  "knowsAbout": [
+    "Data engineering",
+    "ELT pipelines",
+    "Medallion architecture",
+    "Delta Lake",
+    "Databricks",
+    "Microsoft Fabric",
+    "Azure Data Factory",
+    "Apache Spark",
+    "PySpark",
+    "Apache Airflow",
+    "SQL",
+    "Python",
+    "Data modeling"
+  ]
+}
+  </script>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="brand">
-        <div>
-          <div style="font-size:38px; font-weight:800;">Shivam Dubey</div>
-          <div style="font-size:12px;color:var(--muted);">Data Engineer • Indore, India</div>
-        </div>
-      </div>
-      <nav aria-label="Primary">
-        <a href="./index.html">Home</a>
-        <a href="./projects.html" aria-current="page">Projects</a>
+  <script>
+    /* Runs before first paint: marks JS-enabled and applies the saved/system theme without a flash. */
+    document.documentElement.classList.add('js');
+    try {
+      var d = localStorage.getItem('darkMode');
+      if (d === 'true' || (d === null && window.matchMedia('(prefers-color-scheme: dark)').matches)) document.body.classList.add('dark-mode');
+    } catch (e) {}
+  </script>
+  <a class="skipLink" href="#main">Skip to main content</a>
+
+  <div class="container" id="top">
+    <header class="siteHeader">
+      <a class="brand" href="./index.html">
+        <span class="brandName">Shivam Dubey</span>
+        <span class="brandRole">Data Engineer • Indore, India</span>
+      </a>
+      <nav id="siteNav" aria-label="Primary">
         <a href="./index.html#experience">Experience</a>
+        <a href="./projects.html" aria-current="page">Projects</a>
         <a href="./index.html#skills">Skills</a>
         <a href="./index.html#certifications">Certifications</a>
         <a href="./index.html#education">Education</a>
+        <!-- Writing: when the first post is added, remove [hidden] from #writing in index.html and add a nav link here. -->
         <a href="./index.html#contact" class="cta">Contact</a>
-        <button class="darkModeToggle" id="darkModeToggle" aria-label="Toggle dark mode">
-          <svg class="sunIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      </nav>
+      <div class="headerTools">
+        <button class="darkModeToggle" id="darkModeToggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+          <svg class="sunIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
             <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -37,443 +115,505 @@
             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
           </svg>
-          <svg class="moonIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <svg class="moonIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
         </button>
-      </nav>
+        <button class="navToggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="siteNav"><span class="bar" aria-hidden="true"></span></button>
+      </div>
     </header>
 
-    <main>
-      <section class="reveal" data-delay="1">
-        <div class="sectionHead">
-          <h2>All Projects</h2>
-          <div class="hint"><span data-project-count>14</span> projects</div>
-        </div>
+    <main id="main" tabindex="-1">
+      <div class="sectionHead">
+        <h1 class="pageTitle">Projects</h1>
+        <div class="hint">Open a card for the outcome, problem, solution, stack and diagram</div>
+      </div>
+      <!-- Per-project role / year / status / live demo:
+           add "My Role" and "Project Info" sections to Project_data/<name>.txt (stubs are in each file, commented out),
+           and an optional data-demo="https://..." attribute on the card. They only render when present.
+           TODO(confirm): fill in role, year and status for each project; no demo links have been provided. -->
 
+      <div class="projectToolbar">
+        <div class="filterBar">
+          <label class="sr-only" for="projectSearch">Search projects</label>
+          <input id="projectSearch" type="search" data-project-filter placeholder="Search projects or tools (Airflow, Delta Lake…)" autocomplete="off" />
+        </div>
+        <div class="chipRow" role="group" aria-label="Filter projects by topic">
+          <button type="button" class="filterChip" data-filter="" aria-pressed="true">All</button>
+          <button type="button" class="filterChip" data-filter="streaming" aria-pressed="false">Streaming</button>
+          <button type="button" class="filterChip" data-filter="cdc" aria-pressed="false">CDC</button>
+          <button type="button" class="filterChip" data-filter="medallion" aria-pressed="false">Medallion</button>
+          <button type="button" class="filterChip" data-filter="airflow" aria-pressed="false">Airflow</button>
+          <button type="button" class="filterChip" data-filter="warehouse" aria-pressed="false">Warehouse</button>
+          <button type="button" class="filterChip" data-filter="nosql" aria-pressed="false">NoSQL</button>
+          <button type="button" class="filterChip" data-filter="bi-ml" aria-pressed="false">BI / ML</button>
+        </div>
+        <p id="filterStatus" class="filterStatus" role="status" aria-live="polite">Showing 14 of 14 projects</p>
+      </div>
+      <p id="filterEmpty" class="emptyState" hidden>No projects match. Clear the search or choose “All”.</p>
+
+      <section class="reveal" data-delay="1" aria-labelledby="flagshipHeading">
+        <div class="sectionHead">
+          <h2 id="flagshipHeading">Flagship projects</h2>
+          <div class="hint">The pipelines I would walk you through first</div>
+        </div>
         <div class="projectsGrid">
-          <!-- 1. Near Real-Time CDC Lakehouse Pipeline -->
-          <article class="projectCard reveal" data-delay="1" data-project-card data-search="Near Real-Time CDC Lakehouse Pipeline Azure SQL Database Change Tracking Change Data Capture Azure Data Factory Tumbling Window Databricks Delta Lake MERGE Synapse Analytics Serverless Medallion Bronze Silver Gold" data-project="Near Real-Time CDC Lakehouse Pipeline" data-github="https://github.com/shivamdubey2310/CDC-Lakehouse-Pipeline">
+          <!-- TODO(confirm): GitHub URL for this project. Not listed in project_links.txt and not verifiable from this environment. -->
+          <article class="projectCard reveal" data-delay="1" data-project-card data-search="Near Real-Time CDC Lakehouse Pipeline Azure SQL Database Change Tracking Change Data Capture Azure Data Factory Tumbling Window Databricks Delta Lake MERGE Synapse Analytics Serverless Medallion Bronze Silver Gold" data-project="Near Real-Time CDC Lakehouse Pipeline" data-slug="near-real-time-cdc-lakehouse-pipeline" data-github="https://github.com/shivamdubey2310/CDC-Lakehouse-Pipeline" data-tags="cdc medallion" data-full-w="2400" data-full-h="438">
             <div class="projectThumbnail">
-              <img src="./project_images/Near Real-Time CDC Lakehouse Pipeline.png" alt="Near Real-Time CDC Lakehouse Pipeline" loading="lazy" />
+              <picture>
+                <source type="image/webp" srcset="./project_images/web/near-real-time-cdc-lakehouse-pipeline-640.webp" />
+                <img src="./project_images/Near%20Real-Time%20CDC%20Lakehouse%20Pipeline.png" alt="Layered architecture diagram: Azure SQL Database (OLTP) sends incremental CDC pulls to Azure Data Factory, which runs a 5-minute micro-batch, lands data in ADLS Gen2, processes it in Azure Databricks and serves it through Azure Synapse Analytics." width="640" height="117" loading="eager" fetchpriority="high" decoding="async" />
+              </picture>
             </div>
             <div class="projectContent">
               <div class="cardTop">
-                <h3>Near Real-Time CDC Lakehouse Pipeline</h3>
+                <h3><button type="button" class="projectOpen" aria-haspopup="dialog">Near Real-Time CDC Lakehouse Pipeline</button></h3>
                 <span class="pill">CDC</span>
               </div>
-              <p class="meta">A metadata-driven Change Data Capture pipeline on Microsoft Azure (SQL Change Tracking + ADF Tumbling Window Triggers) that incrementally ingests 1M+ records into a Medallion Delta Lake, cutting data latency from 24h to sub-10 min. Downstream queries see near-current data instead of day-old snapshots.</p>
-              <div class="tags">
-                <span class="tag">Azure Data Factory</span>
-                <span class="tag">Databricks</span>
-                <span class="tag">Delta Lake</span>
-                <span class="tag">Synapse Analytics</span>
+              <p class="outcome">Downstream queries see near-current data instead of day-old snapshots.</p>
+              <ul class="metricChips"><li><strong>24h → sub-10 min</strong><span>data latency</span></li><li><strong>1M+</strong><span>records</span></li></ul>
+              <p class="meta">Metadata-driven CDC on Azure: SQL Change Tracking and ADF Tumbling Window Triggers feed a Medallion Delta Lake that Synapse Serverless queries directly.</p>
+              <div class="tags"><span class="tag">Azure Data Factory</span><span class="tag">Databricks</span><span class="tag">Delta Lake</span><span class="tag">Synapse Analytics</span></div>
+              <div class="cardActions">
+                <a class="projectGithubLink" href="https://github.com/shivamdubey2310/CDC-Lakehouse-Pipeline" target="_blank" rel="noopener noreferrer" aria-label="Near Real-Time CDC Lakehouse Pipeline on GitHub (opens in a new tab)">GitHub ↗</a>
               </div>
             </div>
           </article>
 
-          <!-- 2. Automated Weather Monitoring in Microsoft Fabric -->
-          <article class="projectCard reveal" data-delay="1" data-project-card data-search="Automated Weather Monitoring Microsoft Fabric Real-time Streaming Eventstreams Eventhouse Real-Time Dashboard Fabric Activator KQL Delhi" data-project="Automated Weather Monitoring in Microsoft Fabric" data-github="https://github.com/shivamdubey2310/Fabric-realtime-weather">
+          <article class="projectCard reveal" data-delay="1" data-project-card data-search="Automated Weather Monitoring Microsoft Fabric Real-time Streaming Eventstreams Eventhouse Real-Time Dashboard Fabric Activator KQL Delhi" data-project="Automated Weather Monitoring in Microsoft Fabric" data-slug="automated-weather-monitoring-in-microsoft-fabric" data-github="https://github.com/shivamdubey2310/Fabric-realtime-weather" data-tags="streaming" data-full-w="2400" data-full-h="1125">
             <div class="projectThumbnail">
-              <img src="./project_images/Automated Weather Monitoring in Microsoft Fabric.png" alt="Automated Weather Monitoring" loading="lazy" />
+              <picture>
+                <source type="image/webp" srcset="./project_images/web/automated-weather-monitoring-in-microsoft-fabric-640.webp" />
+                <img src="./project_images/Automated%20Weather%20Monitoring%20in%20Microsoft%20Fabric.png" alt="Microsoft Fabric streaming diagram: real-time weather updates flow into an Eventstream, then an Eventhouse, then a Real-time Dashboard." width="640" height="300" loading="lazy" decoding="async" />
+              </picture>
             </div>
             <div class="projectContent">
               <div class="cardTop">
-                <h3>Automated Weather Monitoring in Microsoft Fabric</h3>
+                <h3><button type="button" class="projectOpen" aria-haspopup="dialog">Automated Weather Monitoring in Microsoft Fabric</button></h3>
                 <span class="pill">Real-time</span>
               </div>
-              <p class="meta">End-to-end streaming on Microsoft Fabric: Delhi weather telemetry flows through Eventstreams into Eventhouse with sub-second latency, replacing batch polling. Dual Fabric Activators alert on high/low temperature, replacing manual monitoring, and a Real-Time Dashboard shows live readings, trends and alert history.</p>
-              <div class="tags">
-                <span class="tag">Microsoft Fabric</span>
-                <span class="tag">Eventstreams</span>
-                <span class="tag">Eventhouse</span>
-                <span class="tag">Fabric Activator</span>
+              <p class="outcome">Automated alerts and a live dashboard replace batch polling and manual monitoring.</p>
+              <ul class="metricChips"><li><strong>Sub-second</strong><span>latency</span></li><li><strong>2</strong><span>Fabric Activators</span></li></ul>
+              <p class="meta">Delhi weather telemetry streamed through Eventstreams into Eventhouse, with dual Fabric Activators for high/low temperature alerts and a Real-Time Dashboard.</p>
+              <div class="tags"><span class="tag">Microsoft Fabric</span><span class="tag">Eventstreams</span><span class="tag">Eventhouse</span><span class="tag">Fabric Activator</span></div>
+              <div class="cardActions">
+                <a class="projectGithubLink" href="https://github.com/shivamdubey2310/Fabric-realtime-weather" target="_blank" rel="noopener noreferrer" aria-label="Automated Weather Monitoring in Microsoft Fabric on GitHub (opens in a new tab)">GitHub ↗</a>
               </div>
             </div>
           </article>
 
-          <!-- 3. End-to-End Medallion ETL Pipeline via Microsoft Fabric -->
-          <article class="projectCard reveal" data-delay="2" data-project-card data-search="End-to-End Medallion ETL Pipeline Microsoft Fabric Delta Lake Bronze Silver Gold Lakehouse PySpark AirNow AQI Power BI" data-project="End-to-End Medallion ETL Pipeline via Microsoft Fabric" data-github="https://github.com/shivamdubey2310/AirNow_ETL_Fabric">
+          <article class="projectCard reveal" data-delay="1" data-project-card data-search="End-to-End Medallion ETL Pipeline Microsoft Fabric Delta Lake Bronze Silver Gold Lakehouse PySpark AirNow AQI Power BI" data-project="End-to-End Medallion ETL Pipeline via Microsoft Fabric" data-slug="end-to-end-medallion-etl-pipeline-via-microsoft-fabric" data-github="https://github.com/shivamdubey2310/AirNow_ETL_Fabric" data-tags="medallion bi-ml" data-full-w="2048" data-full-h="843">
             <div class="projectThumbnail">
-              <img src="./project_images/End-to-End Medallion ETL Pipeline via Microsoft Fabric.png" alt="End-to-End Medallion ETL Pipeline" loading="lazy" />
+              <picture>
+                <source type="image/webp" srcset="./project_images/web/end-to-end-medallion-etl-pipeline-via-microsoft-fabric-640.webp" />
+                <img src="./project_images/End-to-End%20Medallion%20ETL%20Pipeline%20via%20Microsoft%20Fabric.png" alt="Medallion pipeline on Microsoft Fabric: an API is extracted, PySpark writes the Bronze, Silver and Gold Delta Lake layers in turn, and the Gold layer is visualised in Power BI." width="640" height="263" loading="lazy" decoding="async" />
+              </picture>
             </div>
             <div class="projectContent">
               <div class="cardTop">
-                <h3>End-to-End Medallion ETL Pipeline via Microsoft Fabric</h3>
+                <h3><button type="button" class="projectOpen" aria-haspopup="dialog">End-to-End Medallion ETL Pipeline via Microsoft Fabric</button></h3>
                 <span class="pill">Medallion</span>
               </div>
-              <p class="meta">AirNow API → Bronze/Silver/Gold Delta tables on Microsoft Fabric: 10K+ AQI records processed by config-driven PySpark with structured logging. Gold tables feed Power BI AQI forecasting dashboards.</p>
-              <div class="tags">
-                <span class="tag">Microsoft Fabric</span>
-                <span class="tag">Delta Lake</span>
-                <span class="tag">PySpark</span>
-                <span class="tag">Medallion</span>
+              <p class="outcome">Gold tables feed Power BI AQI forecasting dashboards.</p>
+              <ul class="metricChips"><li><strong>10K+</strong><span>AQI records</span></li></ul>
+              <p class="meta">AirNow API to Bronze/Silver/Gold Delta tables on Microsoft Fabric, via config-driven PySpark with structured logging.</p>
+              <div class="tags"><span class="tag">Microsoft Fabric</span><span class="tag">Delta Lake</span><span class="tag">PySpark</span><span class="tag">Medallion</span></div>
+              <div class="cardActions">
+                <a class="projectGithubLink" href="https://github.com/shivamdubey2310/AirNow_ETL_Fabric" target="_blank" rel="noopener noreferrer" aria-label="End-to-End Medallion ETL Pipeline via Microsoft Fabric on GitHub (opens in a new tab)">GitHub ↗</a>
               </div>
             </div>
           </article>
 
-          <!-- 4. Automated E-commerce Data Warehouse & Star Schema Design -->
-          <article class="projectCard reveal" data-delay="3" data-project-card data-search="Automated E-commerce Data Warehouse Star Schema Design MySQL Python Pandas Faker SQLAlchemy Dimensional Modeling ETL" data-project="Automated E-commerce Data Warehouse & Star Schema Design" data-github="https://github.com/shivamdubey2310/E-commerce_data_warehouse">
+          <article class="projectCard reveal" data-delay="1" data-project-card data-search="Real-Time Delta Lake Streaming Pipeline Spark Structured Streaming PySpark ACID Checkpointing" data-project="Real-Time Delta Lake Streaming Pipeline (Spark Structured Streaming)" data-slug="real-time-delta-lake-streaming-pipeline-spark-structured-streaming" data-github="https://github.com/shivamdubey2310/CSV_Streams_into_Delta_lake" data-tags="streaming" data-full-w="800" data-full-h="436">
             <div class="projectThumbnail">
-              <img src="./project_images/Automated E-commerce Data Warehouse & Star Schema Design.png" alt="Automated E-commerce Data Warehouse & Star Schema Design" loading="lazy" />
+              <picture>
+                <source type="image/webp" srcset="./project_images/web/real-time-delta-lake-streaming-pipeline-spark-structured-streaming-640.webp" />
+                <img src="./project_images/Real-Time%20Delta%20Lake%20Streaming%20Pipeline%20(Spark%20Structured%20Streaming).png" alt="Flow diagram titled Real-Time CSV to Delta Lake Data Flow: a raw CSV folder feeds Spark Structured Streaming, which writes to a Delta Lake table and uses a checkpoint directory." width="640" height="349" loading="lazy" decoding="async" />
+              </picture>
             </div>
             <div class="projectContent">
               <div class="cardTop">
-                <h3>Automated E-commerce Data Warehouse & Star Schema Design</h3>
-                <span class="pill">Warehouse</span>
-              </div>
-              <p class="meta">Designed a dimensional data warehouse from scratch, engineering a Python-based ETL pipeline to process transactional data into a Star Schema on MySQL for retail analytics.</p>
-              <div class="tags">
-                <span class="tag">MySQL</span>
-                <span class="tag">Python</span>
-                <span class="tag">SQLAlchemy</span>
-                <span class="tag">Star Schema</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- 5. Automated PokeAPI ETL Pipeline with Apache Airflow & MySQL -->
-          <article class="projectCard reveal" data-delay="1" data-project-card data-search="Automated PokeAPI ETL Pipeline Apache Airflow MySQL DAG Python Pandas SQLAlchemy REST API" data-project="Automated PokeAPI ETL Pipeline with Apache Airflow & MySQL" data-github="https://github.com/shivamdubey2310/PokeAPI_ETL">
-            <div class="projectThumbnail">
-              <img src="./project_images/Automated PokeAPI ETL Pipeline with Apache Airflow & MySQL.png" alt="Automated PokeAPI ETL Pipeline" loading="lazy" />
-            </div>
-            <div class="projectContent">
-              <div class="cardTop">
-                <h3>Automated PokeAPI ETL Pipeline with Apache Airflow & MySQL</h3>
-                <span class="pill">ETL</span>
-              </div>
-              <p class="meta">An end-to-end data pipeline orchestrated with Apache Airflow that extracts complex hierarchical API data, transforms it, and loads it into a normalized MySQL relational database.</p>
-              <div class="tags">
-                <span class="tag">Apache Airflow</span>
-                <span class="tag">MySQL</span>
-                <span class="tag">Python</span>
-                <span class="tag">REST API</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- 6. Real-Time Delta Lake Streaming Pipeline (Spark Structured Streaming) -->
-          <article class="projectCard reveal" data-delay="2" data-project-card data-search="Real-Time Delta Lake Streaming Pipeline Spark Structured Streaming PySpark ACID Checkpointing" data-project="Real-Time Delta Lake Streaming Pipeline (Spark Structured Streaming)" data-github="https://github.com/shivamdubey2310/CSV_Streams_into_Delta_lake">
-            <div class="projectThumbnail">
-              <img src="./project_images/Real-Time Delta Lake Streaming Pipeline (Spark Structured Streaming).png" alt="Real-Time Delta Lake Streaming Pipeline" loading="lazy" />
-            </div>
-            <div class="projectContent">
-              <div class="cardTop">
-                <h3>Real-Time Delta Lake Streaming Pipeline</h3>
+                <h3><button type="button" class="projectOpen" aria-haspopup="dialog">Real-Time Delta Lake Streaming Pipeline</button></h3>
                 <span class="pill">Streaming</span>
               </div>
               <p class="meta">A fault-tolerant streaming framework that dynamically validates and ingests raw CSV files into ACID-compliant Delta Lake tables using Spark Structured Streaming.</p>
-              <div class="tags">
-                <span class="tag">Spark Streaming</span>
-                <span class="tag">Delta Lake</span>
-                <span class="tag">PySpark</span>
-                <span class="tag">Checkpointing</span>
+              <div class="tags"><span class="tag">Spark Streaming</span><span class="tag">Delta Lake</span><span class="tag">PySpark</span><span class="tag">Checkpointing</span></div>
+              <div class="cardActions">
+                <a class="projectGithubLink" href="https://github.com/shivamdubey2310/CSV_Streams_into_Delta_lake" target="_blank" rel="noopener noreferrer" aria-label="Real-Time Delta Lake Streaming Pipeline (Spark Structured Streaming) on GitHub (opens in a new tab)">GitHub ↗</a>
               </div>
             </div>
           </article>
 
-          <!-- 7. Automated Linux‑Native ETL (Bash, Python & PostgreSQL) -->
-          <article class="projectCard reveal" data-delay="3" data-project-card data-search="Automated Linux Native ETL Bash Python PostgreSQL Shell Cron Curl SQLAlchemy REST API" data-project="Automated Linux‑Native ETL (Bash, Python & PostgreSQL)" data-github="https://github.com/shivamdubey2310/ETL_Using_Bash">
+          <article class="projectCard reveal" data-delay="1" data-project-card data-search="Containerized Web Scraping ETL Airflow PostgreSQL Docker BeautifulSoup Astro CLI Python" data-project="Containerized Web‑Scraping ETL (Airflow &amp; PostgreSQL)" data-slug="containerized-webscraping-etl-airflow-postgresql" data-github="https://github.com/shivamdubey2310/WebScraping_project_bs4" data-tags="airflow" data-full-w="2400" data-full-h="1087">
             <div class="projectThumbnail">
-              <img src="./project_images/Automated Linux‑Native ETL (Bash, Python & PostgreSQL).png" alt="Automated Linux-Native ETL" loading="lazy" />
+              <picture>
+                <source type="image/webp" srcset="./project_images/web/containerized-webscraping-etl-airflow-postgresql-640.webp" />
+                <img src="./project_images/Containerized%20Web%E2%80%91Scraping%20ETL%20(Airflow%20%26%20PostgreSQL).png" alt="Airflow-orchestrated pipeline diagram: web pages are scraped with BeautifulSoup, transformed with pandas, and loaded into PostgreSQL through SQLAlchemy." width="640" height="290" loading="lazy" decoding="async" />
+              </picture>
             </div>
             <div class="projectContent">
               <div class="cardTop">
-                <h3>Automated Linux‑Native ETL (Bash, Python & PostgreSQL)</h3>
-                <span class="pill">ETL</span>
-              </div>
-              <p class="meta">A lightweight, automated ETL workflow that orchestrates data extraction from REST APIs via Bash and processes complex JSON into a normalized PostgreSQL database using Python.</p>
-              <div class="tags">
-                <span class="tag">Bash</span>
-                <span class="tag">Python</span>
-                <span class="tag">PostgreSQL</span>
-                <span class="tag">Cron</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- 8. Containerized Web‑Scraping ETL (Airflow & PostgreSQL) -->
-          <article class="projectCard reveal" data-delay="1" data-project-card data-search="Containerized Web Scraping ETL Airflow PostgreSQL Docker BeautifulSoup Astro CLI Python" data-project="Containerized Web‑Scraping ETL (Airflow & PostgreSQL)" data-github="https://github.com/shivamdubey2310/WebScraping_project_bs4">
-            <div class="projectThumbnail">
-              <img src="./project_images/Containerized Web‑Scraping ETL (Airflow & PostgreSQL).png" alt="Containerized Web-Scraping ETL" loading="lazy" />
-            </div>
-            <div class="projectContent">
-              <div class="cardTop">
-                <h3>Containerized Web‑Scraping ETL (Airflow & PostgreSQL)</h3>
+                <h3><button type="button" class="projectOpen" aria-haspopup="dialog">Containerized Web‑Scraping ETL (Airflow &amp; PostgreSQL)</button></h3>
                 <span class="pill">ETL</span>
               </div>
               <p class="meta">A containerized data extraction pipeline that scrapes unstructured job board HTML, normalizes the data, and loads it into PostgreSQL using Airflow and Docker.</p>
-              <div class="tags">
-                <span class="tag">Docker</span>
-                <span class="tag">Airflow</span>
-                <span class="tag">PostgreSQL</span>
-                <span class="tag">BeautifulSoup</span>
+              <div class="tags"><span class="tag">Docker</span><span class="tag">Airflow</span><span class="tag">PostgreSQL</span><span class="tag">BeautifulSoup</span></div>
+              <div class="cardActions">
+                <a class="projectGithubLink" href="https://github.com/shivamdubey2310/WebScraping_project_bs4" target="_blank" rel="noopener noreferrer" aria-label="Containerized Web‑Scraping ETL (Airflow &amp; PostgreSQL) on GitHub (opens in a new tab)">GitHub ↗</a>
               </div>
             </div>
           </article>
 
-          <!-- 9. Automated Tech‑News ETL (PySpark & MongoDB Atlas) -->
-          <article class="projectCard reveal" data-delay="2" data-project-card data-search="Automated Tech News ETL PySpark MongoDB Atlas Parquet NewsAPI Cloud NoSQL" data-project="Automated Tech‑News ETL (PySpark & MongoDB Atlas)" data-github="https://github.com/shivamdubey2310/News_API_ETL">
-            <div class="projectThumbnail">
-              <img src="./project_images/Automated Tech‑News ETL (PySpark & MongoDB Atlas).png" alt="Automated Tech-News ETL" loading="lazy" />
-            </div>
-            <div class="projectContent">
-              <div class="cardTop">
-                <h3>Automated Tech‑News ETL (PySpark & MongoDB Atlas)</h3>
-                <span class="pill">Big Data</span>
-              </div>
-              <p class="meta">A cloud-native data pipeline that aggregates daily technology news via APIs, processes data using PySpark for scalability, and archives it in a MongoDB Atlas document store.</p>
-              <div class="tags">
-                <span class="tag">PySpark</span>
-                <span class="tag">MongoDB Atlas</span>
-                <span class="tag">Parquet</span>
-                <span class="tag">NewsAPI</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- 10. Enterprise University Management System & Relational Database Design -->
-          <article class="projectCard reveal" data-delay="3" data-project-card data-search="Enterprise University Management System Relational Database Design PostgreSQL SQL Triggers Stored Procedures ERD 3NF OLTP" data-project="Enterprise University Management System & Relational Database Design" data-github="https://github.com/shivamdubey2310/University_db">
-            <div class="projectThumbnail">
-              <img src="./project_images/Enterprise University Management System & Relational Database Design.png" alt="Enterprise University Management System" loading="lazy" />
-            </div>
-            <div class="projectContent">
-              <div class="cardTop">
-                <h3>Enterprise University Management System & Relational Database Design</h3>
-                <span class="pill">Database</span>
-              </div>
-              <p class="meta">A fully normalized, ACID-compliant relational database architecture designed to manage complex university operations, from student enrollment to faculty scheduling.</p>
-              <div class="tags">
-                <span class="tag">PostgreSQL</span>
-                <span class="tag">SQL</span>
-                <span class="tag">ERD</span>
-                <span class="tag">Triggers</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- 11. Orchestrated NoSQL ETL Pipeline for Studio Ghibli Analytics -->
-          <article class="projectCard reveal" data-delay="1" data-project-card data-search="Orchestrated NoSQL ETL Pipeline Studio Ghibli Analytics MongoDB Airflow Astro CLI Python Pandas REST API" data-project="Orchestrated NoSQL ETL Pipeline for Studio Ghibli Analytics" data-github="https://github.com/shivamdubey2310/Studio_Ghibli_ETL">
-            <div class="projectThumbnail">
-              <img src="./project_images/Orchestrated NoSQL ETL Pipeline for Studio Ghibli Analytics.png" alt="Orchestrated NoSQL ETL Pipeline" loading="lazy" />
-            </div>
-            <div class="projectContent">
-              <div class="cardTop">
-                <h3>Orchestrated NoSQL ETL Pipeline for Studio Ghibli Analytics</h3>
-                <span class="pill">NoSQL</span>
-              </div>
-              <p class="meta">A hybrid ETL workflow capable of running as a standalone script or an Airflow DAG that aggregates film, character, and vehicle data into a MongoDB document store.</p>
-              <div class="tags">
-                <span class="tag">MongoDB</span>
-                <span class="tag">Airflow</span>
-                <span class="tag">Python</span>
-                <span class="tag">REST API</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- 12. Sales Analytics & Data Quality Dashboard -->
-          <article class="projectCard reveal" data-delay="2" data-project-card data-search="Sales Analytics Data Quality Dashboard Power BI Power Query DAX KPIs Visualization ETL" data-project="Sales Analytics & Data Quality Dashboard" data-github="https://github.com/shivamdubey2310/Sales-Dashboard">
-            <div class="projectThumbnail">
-              <img src="./project_images/Sales Analytics & Data Quality Dashboard.png" alt="Sales Analytics & Data Quality Dashboard" loading="lazy" />
-            </div>
-            <div class="projectContent">
-              <div class="cardTop">
-                <h3>Sales Analytics & Data Quality Dashboard</h3>
-                <span class="pill">BI</span>
-              </div>
-              <p class="meta">A comprehensive Power BI solution that transforms raw sales data into actionable KPIs and interactive visualizations using a robust Power Query ETL pipeline.</p>
-              <div class="tags">
-                <span class="tag">Power BI</span>
-                <span class="tag">Power Query</span>
-                <span class="tag">DAX</span>
-                <span class="tag">Data Quality</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- 13. Scalable Spotify Hit Predictor (PySpark MLlib & Streamlit) -->
-          <article class="projectCard reveal" data-delay="3" data-project-card data-search="Scalable Spotify Hit Predictor PySpark MLlib Streamlit Machine Learning Linear Regression VectorAssembler" data-project="Scalable Spotify Hit Predictor (PySpark MLlib & Streamlit)" data-github="https://github.com/shivamdubey2310/Hit_song_predictor">
-            <div class="projectThumbnail">
-              <img src="./project_images/Scalable Spotify Hit Predictor (PySpark MLlib & Streamlit).png" alt="Scalable Spotify Hit Predictor" loading="lazy" />
-            </div>
-            <div class="projectContent">
-              <div class="cardTop">
-                <h3>Scalable Spotify Hit Predictor (PySpark MLlib & Streamlit)</h3>
-                <span class="pill">ML</span>
-              </div>
-              <p class="meta">An interactive machine learning application that predicts song popularity based on audio telemetry using a distributed PySpark ML pipeline served via a Streamlit web interface.</p>
-              <div class="tags">
-                <span class="tag">PySpark</span>
-                <span class="tag">MLlib</span>
-                <span class="tag">Streamlit</span>
-                <span class="tag">ML</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- 14. Self‑Service API Data Ingestion Utility (Streamlit) -->
-          <article class="projectCard reveal" data-delay="1" data-project-card data-search="Self Service API Data Ingestion Utility Streamlit Python REST API JSON MVC Data-as-a-Service" data-project="Self‑Service API Data Ingestion Utility (Streamlit)" data-github="https://github.com/shivamdubey2310/API_data_extractor">
-            <div class="projectThumbnail">
-              <img src="./project_images/Self‑Service API Data Ingestion Utility (Streamlit).png" alt="Self-Service API Data Ingestion Utility" loading="lazy" />
-            </div>
-            <div class="projectContent">
-              <div class="cardTop">
-                <h3>Self‑Service API Data Ingestion Utility (Streamlit)</h3>
-                <span class="pill">Tool</span>
-              </div>
-              <p class="meta">A lightweight "Data-as-a-Service" web application built with Streamlit that allows non-technical users to fetch, preview, and download raw JSON data from public REST APIs without writing code.</p>
-              <div class="tags">
-                <span class="tag">Streamlit</span>
-                <span class="tag">Python</span>
-                <span class="tag">REST API</span>
-                <span class="tag">JSON</span>
-              </div>
-            </div>
-          </article>
         </div>
       </section>
 
-      <!-- Other Projects Section -->
-      <section class="reveal" data-delay="1">
-        <div class="sectionHead">
-          <h2>Other Projects</h2>
-          <div class="hint"><span data-other-project-count>5</span> resources</div>
-        </div>
-
+      <details class="moreProjects" id="moreProjects">
+        <summary><span>More projects <span aria-hidden="true">(</span><span data-more-count>9</span><span aria-hidden="true">)</span></span><span class="sumHint">Warehousing, databases, BI, ML and tools</span></summary>
         <div class="projectsGrid">
-          <!-- 1. Python For data analysis CheatSheets -->
-          <article class="projectCard reveal" data-delay="1" data-project-card data-other-project data-search="Python Data Analysis CheatSheets NumPy Pandas Matplotlib Seaborn Documentation Reference PDF" data-project="Python For data analysis CheatSheets" data-github="https://github.com/shivamdubey2310/python_for_data_analysis_cheatsheets">
+          <article class="projectCard reveal" data-delay="1" data-project-card data-search="Automated E-commerce Data Warehouse Star Schema Design MySQL Python Pandas Faker SQLAlchemy Dimensional Modeling ETL" data-project="Automated E-commerce Data Warehouse &amp; Star Schema Design" data-slug="automated-e-commerce-data-warehouse-star-schema-design" data-github="https://github.com/shivamdubey2310/E-commerce_data_warehouse" data-tags="warehouse" data-full-w="662" data-full-h="533">
             <div class="projectThumbnail">
-              <img src="./Other_project_images/Python For data analysis CheatSheets.png" alt="Python For data analysis CheatSheets" loading="lazy" />
+              <picture>
+                <source type="image/webp" srcset="./project_images/web/automated-e-commerce-data-warehouse-star-schema-design-640.webp" />
+                <img src="./project_images/Automated%20E-commerce%20Data%20Warehouse%20%26%20Star%20Schema%20Design.png" alt="Star schema diagram: an e-commerce transaction fact table in the centre joined to six dimension tables: DimDate, DimProduct, DimStore, DimPromotion, DimCustomer and DimPaymentType." width="640" height="515" loading="lazy" decoding="async" />
+              </picture>
             </div>
             <div class="projectContent">
               <div class="cardTop">
-                <h3>Python For data analysis CheatSheets</h3>
+                <h3><button type="button" class="projectOpen" aria-haspopup="dialog">Automated E-commerce Data Warehouse &amp; Star Schema Design</button></h3>
+                <span class="pill">Warehouse</span>
+              </div>
+              <p class="meta">Designed a dimensional data warehouse from scratch, engineering a Python-based ETL pipeline to process transactional data into a Star Schema on MySQL for retail analytics.</p>
+              <div class="tags"><span class="tag">MySQL</span><span class="tag">Python</span><span class="tag">SQLAlchemy</span><span class="tag">Star Schema</span></div>
+              <div class="cardActions">
+                <a class="projectGithubLink" href="https://github.com/shivamdubey2310/E-commerce_data_warehouse" target="_blank" rel="noopener noreferrer" aria-label="Automated E-commerce Data Warehouse &amp; Star Schema Design on GitHub (opens in a new tab)">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projectCard reveal" data-delay="1" data-project-card data-search="Automated PokeAPI ETL Pipeline Apache Airflow MySQL DAG Python Pandas SQLAlchemy REST API" data-project="Automated PokeAPI ETL Pipeline with Apache Airflow &amp; MySQL" data-slug="automated-pokeapi-etl-pipeline-with-apache-airflow-mysql" data-github="https://github.com/shivamdubey2310/PokeAPI_ETL" data-tags="airflow" data-full-w="1920" data-full-h="1080">
+            <div class="projectThumbnail">
+              <picture>
+                <source type="image/webp" srcset="./project_images/web/automated-pokeapi-etl-pipeline-with-apache-airflow-mysql-640.webp" />
+                <img src="./project_images/Automated%20PokeAPI%20ETL%20Pipeline%20with%20Apache%20Airflow%20%26%20MySQL.png" alt="Apache Airflow UI screenshot of the PokeAPI_Dag run marked success, with the Extract, Transform and Load tasks all succeeded in about 12 seconds." width="640" height="360" loading="lazy" decoding="async" />
+              </picture>
+            </div>
+            <div class="projectContent">
+              <div class="cardTop">
+                <h3><button type="button" class="projectOpen" aria-haspopup="dialog">Automated PokeAPI ETL Pipeline with Apache Airflow &amp; MySQL</button></h3>
+                <span class="pill">ETL</span>
+              </div>
+              <p class="meta">An end-to-end data pipeline orchestrated with Apache Airflow that extracts complex hierarchical API data, transforms it, and loads it into a normalized MySQL relational database.</p>
+              <div class="tags"><span class="tag">Apache Airflow</span><span class="tag">MySQL</span><span class="tag">Python</span><span class="tag">REST API</span></div>
+              <div class="cardActions">
+                <a class="projectGithubLink" href="https://github.com/shivamdubey2310/PokeAPI_ETL" target="_blank" rel="noopener noreferrer" aria-label="Automated PokeAPI ETL Pipeline with Apache Airflow &amp; MySQL on GitHub (opens in a new tab)">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projectCard reveal" data-delay="1" data-project-card data-search="Automated Linux Native ETL Bash Python PostgreSQL Shell Cron Curl SQLAlchemy REST API" data-project="Automated Linux‑Native ETL (Bash, Python &amp; PostgreSQL)" data-slug="automated-linuxnative-etl-bash-python-postgresql" data-github="https://github.com/shivamdubey2310/ETL_Using_Bash" data-tags="" data-full-w="2400" data-full-h="1087">
+            <div class="projectThumbnail">
+              <picture>
+                <source type="image/webp" srcset="./project_images/web/automated-linuxnative-etl-bash-python-postgresql-640.webp" />
+                <img src="./project_images/Automated%20Linux%E2%80%91Native%20ETL%20(Bash%2C%20Python%20%26%20PostgreSQL).png" alt="Pipeline diagram scheduled by cron: an API is extracted with a Bash script, transformed with pandas, then loaded into PostgreSQL by a second Bash script." width="640" height="290" loading="lazy" decoding="async" />
+              </picture>
+            </div>
+            <div class="projectContent">
+              <div class="cardTop">
+                <h3><button type="button" class="projectOpen" aria-haspopup="dialog">Automated Linux‑Native ETL (Bash, Python &amp; PostgreSQL)</button></h3>
+                <span class="pill">ETL</span>
+              </div>
+              <p class="meta">A lightweight, automated ETL workflow that orchestrates data extraction from REST APIs via Bash and processes complex JSON into a normalized PostgreSQL database using Python.</p>
+              <div class="tags"><span class="tag">Bash</span><span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">Cron</span></div>
+              <div class="cardActions">
+                <a class="projectGithubLink" href="https://github.com/shivamdubey2310/ETL_Using_Bash" target="_blank" rel="noopener noreferrer" aria-label="Automated Linux‑Native ETL (Bash, Python &amp; PostgreSQL) on GitHub (opens in a new tab)">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projectCard reveal" data-delay="1" data-project-card data-search="Automated Tech News ETL PySpark MongoDB Atlas Parquet NewsAPI Cloud NoSQL" data-project="Automated Tech‑News ETL (PySpark &amp; MongoDB Atlas)" data-slug="automated-technews-etl-pyspark-mongodb-atlas" data-github="https://github.com/shivamdubey2310/News_API_ETL" data-tags="nosql" data-full-w="2400" data-full-h="1036">
+            <div class="projectThumbnail">
+              <picture>
+                <source type="image/webp" srcset="./project_images/web/automated-technews-etl-pyspark-mongodb-atlas-640.webp" />
+                <img src="./project_images/Automated%20Tech%E2%80%91News%20ETL%20(PySpark%20%26%20MongoDB%20Atlas).png" alt="Pipeline diagram scheduled by cron: News API data is extracted, transformed with PySpark and loaded into MongoDB Atlas." width="640" height="276" loading="lazy" decoding="async" />
+              </picture>
+            </div>
+            <div class="projectContent">
+              <div class="cardTop">
+                <h3><button type="button" class="projectOpen" aria-haspopup="dialog">Automated Tech‑News ETL (PySpark &amp; MongoDB Atlas)</button></h3>
+                <span class="pill">Big Data</span>
+              </div>
+              <p class="meta">A cloud-native data pipeline that aggregates daily technology news via APIs, processes data using PySpark for scalability, and archives it in a MongoDB Atlas document store.</p>
+              <div class="tags"><span class="tag">PySpark</span><span class="tag">MongoDB Atlas</span><span class="tag">Parquet</span><span class="tag">NewsAPI</span></div>
+              <div class="cardActions">
+                <a class="projectGithubLink" href="https://github.com/shivamdubey2310/News_API_ETL" target="_blank" rel="noopener noreferrer" aria-label="Automated Tech‑News ETL (PySpark &amp; MongoDB Atlas) on GitHub (opens in a new tab)">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projectCard reveal" data-delay="1" data-project-card data-search="Enterprise University Management System Relational Database Design PostgreSQL SQL Triggers Stored Procedures ERD 3NF OLTP" data-project="Enterprise University Management System &amp; Relational Database Design" data-slug="enterprise-university-management-system-relational-database-design" data-github="https://github.com/shivamdubey2310/University_db" data-tags="" data-full-w="1121" data-full-h="901">
+            <div class="projectThumbnail">
+              <picture>
+                <source type="image/webp" srcset="./project_images/web/enterprise-university-management-system-relational-database-design-640.webp" />
+                <img src="./project_images/Enterprise%20University%20Management%20System%20%26%20Relational%20Database%20Design.png" alt="Entity-relationship diagram of the university database with tables including Students, Majors, Minors, Departments, Faculty, Courses, Course_Offerings, Enrollments, Classrooms and Student_Address, showing primary and foreign keys." width="640" height="514" loading="lazy" decoding="async" />
+              </picture>
+            </div>
+            <div class="projectContent">
+              <div class="cardTop">
+                <h3><button type="button" class="projectOpen" aria-haspopup="dialog">Enterprise University Management System &amp; Relational Database Design</button></h3>
+                <span class="pill">Database</span>
+              </div>
+              <p class="meta">A fully normalized, ACID-compliant relational database architecture designed to manage complex university operations, from student enrollment to faculty scheduling.</p>
+              <div class="tags"><span class="tag">PostgreSQL</span><span class="tag">SQL</span><span class="tag">ERD</span><span class="tag">Triggers</span></div>
+              <div class="cardActions">
+                <a class="projectGithubLink" href="https://github.com/shivamdubey2310/University_db" target="_blank" rel="noopener noreferrer" aria-label="Enterprise University Management System &amp; Relational Database Design on GitHub (opens in a new tab)">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projectCard reveal" data-delay="1" data-project-card data-search="Orchestrated NoSQL ETL Pipeline Studio Ghibli Analytics MongoDB Airflow Astro CLI Python Pandas REST API" data-project="Orchestrated NoSQL ETL Pipeline for Studio Ghibli Analytics" data-slug="orchestrated-nosql-etl-pipeline-for-studio-ghibli-analytics" data-github="https://github.com/shivamdubey2310/Studio_Ghibli_ETL" data-tags="airflow nosql" data-full-w="1582" data-full-h="691">
+            <div class="projectThumbnail">
+              <picture>
+                <source type="image/webp" srcset="./project_images/web/orchestrated-nosql-etl-pipeline-for-studio-ghibli-analytics-640.webp" />
+                <img src="./project_images/Orchestrated%20NoSQL%20ETL%20Pipeline%20for%20Studio%20Ghibli%20Analytics.png" alt="Pipeline diagram: an API is extracted, transformed with pandas and loaded into MongoDB, orchestrated by Apache Airflow." width="640" height="280" loading="lazy" decoding="async" />
+              </picture>
+            </div>
+            <div class="projectContent">
+              <div class="cardTop">
+                <h3><button type="button" class="projectOpen" aria-haspopup="dialog">Orchestrated NoSQL ETL Pipeline for Studio Ghibli Analytics</button></h3>
+                <span class="pill">NoSQL</span>
+              </div>
+              <p class="meta">A hybrid ETL workflow capable of running as a standalone script or an Airflow DAG that aggregates film, character, and vehicle data into a MongoDB document store.</p>
+              <div class="tags"><span class="tag">MongoDB</span><span class="tag">Airflow</span><span class="tag">Python</span><span class="tag">REST API</span></div>
+              <div class="cardActions">
+                <a class="projectGithubLink" href="https://github.com/shivamdubey2310/Studio_Ghibli_ETL" target="_blank" rel="noopener noreferrer" aria-label="Orchestrated NoSQL ETL Pipeline for Studio Ghibli Analytics on GitHub (opens in a new tab)">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projectCard reveal" data-delay="1" data-project-card data-search="Sales Analytics Data Quality Dashboard Power BI Power Query DAX KPIs Visualization ETL" data-project="Sales Analytics &amp; Data Quality Dashboard" data-slug="sales-analytics-data-quality-dashboard" data-github="https://github.com/shivamdubey2310/Sales-Dashboard" data-tags="bi-ml" data-full-w="1252" data-full-h="724">
+            <div class="projectThumbnail">
+              <picture>
+                <source type="image/webp" srcset="./project_images/web/sales-analytics-data-quality-dashboard-640.webp" />
+                <img src="./project_images/Sales%20Analytics%20%26%20Data%20Quality%20Dashboard.png" alt="Screenshot of the Power BI Sales Analysis dashboard: profit (19K) and sales (57K) cards, an order-date slicer, a cost-by-product bar chart, a sales-by-region pie chart and a profit-by-month line chart." width="640" height="370" loading="lazy" decoding="async" />
+              </picture>
+            </div>
+            <div class="projectContent">
+              <div class="cardTop">
+                <h3><button type="button" class="projectOpen" aria-haspopup="dialog">Sales Analytics &amp; Data Quality Dashboard</button></h3>
+                <span class="pill">BI</span>
+              </div>
+              <p class="meta">A comprehensive Power BI solution that transforms raw sales data into actionable KPIs and interactive visualizations using a robust Power Query ETL pipeline.</p>
+              <div class="tags"><span class="tag">Power BI</span><span class="tag">Power Query</span><span class="tag">DAX</span><span class="tag">Data Quality</span></div>
+              <div class="cardActions">
+                <a class="projectGithubLink" href="https://github.com/shivamdubey2310/Sales-Dashboard" target="_blank" rel="noopener noreferrer" aria-label="Sales Analytics &amp; Data Quality Dashboard on GitHub (opens in a new tab)">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projectCard reveal" data-delay="1" data-project-card data-search="Scalable Spotify Hit Predictor PySpark MLlib Streamlit Machine Learning Linear Regression VectorAssembler" data-project="Scalable Spotify Hit Predictor (PySpark MLlib &amp; Streamlit)" data-slug="scalable-spotify-hit-predictor-pyspark-mllib-streamlit" data-github="https://github.com/shivamdubey2310/Hit_song_predictor" data-tags="bi-ml" data-full-w="1200" data-full-h="727">
+            <div class="projectThumbnail">
+              <picture>
+                <source type="image/webp" srcset="./project_images/web/scalable-spotify-hit-predictor-pyspark-mllib-streamlit-640.webp" />
+                <img src="./project_images/Scalable%20Spotify%20Hit%20Predictor%20(PySpark%20MLlib%20%26%20Streamlit).png" alt="Spotify logo used as the cover image for the hit-predictor project." width="640" height="388" loading="lazy" decoding="async" />
+              </picture>
+            </div>
+            <div class="projectContent">
+              <div class="cardTop">
+                <h3><button type="button" class="projectOpen" aria-haspopup="dialog">Scalable Spotify Hit Predictor (PySpark MLlib &amp; Streamlit)</button></h3>
+                <span class="pill">ML</span>
+              </div>
+              <p class="meta">An interactive machine learning application that predicts song popularity based on audio telemetry using a distributed PySpark ML pipeline served via a Streamlit web interface.</p>
+              <div class="tags"><span class="tag">PySpark</span><span class="tag">MLlib</span><span class="tag">Streamlit</span><span class="tag">ML</span></div>
+              <div class="cardActions">
+                <a class="projectGithubLink" href="https://github.com/shivamdubey2310/Hit_song_predictor" target="_blank" rel="noopener noreferrer" aria-label="Scalable Spotify Hit Predictor (PySpark MLlib &amp; Streamlit) on GitHub (opens in a new tab)">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projectCard reveal" data-delay="1" data-project-card data-search="Self Service API Data Ingestion Utility Streamlit Python REST API JSON MVC Data-as-a-Service" data-project="Self‑Service API Data Ingestion Utility (Streamlit)" data-slug="selfservice-api-data-ingestion-utility-streamlit" data-github="https://github.com/shivamdubey2310/API_data_extractor" data-tags="" data-full-w="900" data-full-h="500">
+            <div class="projectThumbnail">
+              <picture>
+                <source type="image/webp" srcset="./project_images/web/selfservice-api-data-ingestion-utility-streamlit-640.webp" />
+                <img src="./project_images/Self%E2%80%91Service%20API%20Data%20Ingestion%20Utility%20(Streamlit).png" alt="Purple cloud icon labelled API, representing the self-service API data ingestion utility." width="640" height="356" loading="lazy" decoding="async" />
+              </picture>
+            </div>
+            <div class="projectContent">
+              <div class="cardTop">
+                <h3><button type="button" class="projectOpen" aria-haspopup="dialog">Self‑Service API Data Ingestion Utility (Streamlit)</button></h3>
+                <span class="pill">Tool</span>
+              </div>
+              <p class="meta">A lightweight "Data-as-a-Service" web application built with Streamlit that allows non-technical users to fetch, preview, and download raw JSON data from public REST APIs without writing code.</p>
+              <div class="tags"><span class="tag">Streamlit</span><span class="tag">Python</span><span class="tag">REST API</span><span class="tag">JSON</span></div>
+              <div class="cardActions">
+                <a class="projectGithubLink" href="https://github.com/shivamdubey2310/API_data_extractor" target="_blank" rel="noopener noreferrer" aria-label="Self‑Service API Data Ingestion Utility (Streamlit) on GitHub (opens in a new tab)">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </details>
+
+      <!-- Other Projects Section -->
+      <section id="otherProjects" class="reveal" data-delay="1" aria-labelledby="otherHeading">
+        <div class="sectionHead">
+          <h2 id="otherHeading">Other Projects</h2>
+          <div class="hint">Practice suites and reference resources</div>
+        </div>
+        <div class="projectsGrid">
+          <article class="projectCard reveal" data-delay="1" data-project-card data-other-project data-search="Python Data Analysis CheatSheets NumPy Pandas Matplotlib Seaborn Documentation Reference PDF" data-project="Python For data analysis CheatSheets" data-slug="python-for-data-analysis-cheatsheets" data-github="https://github.com/shivamdubey2310/python_for_data_analysis_cheatsheets" data-tags="" data-full-w="770" data-full-h="322">
+            <div class="projectThumbnail">
+              <picture>
+                <source type="image/webp" srcset="./Other_project_images/web/python-for-data-analysis-cheatsheets-640.webp" />
+                <img src="./Other_project_images/Python%20For%20data%20analysis%20CheatSheets.png" alt="The pandas and Python logos." width="640" height="268" loading="lazy" decoding="async" />
+              </picture>
+            </div>
+            <div class="projectContent">
+              <div class="cardTop">
+                <h3><button type="button" class="projectOpen" aria-haspopup="dialog">Python For data analysis CheatSheets</button></h3>
                 <span class="pill">Resource</span>
               </div>
               <p class="meta">A curated open-source collection of comprehensive quick-reference guides for the core Python data stack (NumPy, Pandas, Matplotlib, Seaborn), designed to accelerate development workflows.</p>
-              <div class="tags">
-                <span class="tag">Pandas</span>
-                <span class="tag">NumPy</span>
-                <span class="tag">Matplotlib</span>
-                <span class="tag">Seaborn</span>
+              <div class="tags"><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span></div>
+              <div class="cardActions">
+                <a class="projectGithubLink" href="https://github.com/shivamdubey2310/python_for_data_analysis_cheatsheets" target="_blank" rel="noopener noreferrer" aria-label="Python For data analysis CheatSheets on GitHub (opens in a new tab)">GitHub ↗</a>
               </div>
             </div>
           </article>
 
-          <!-- 2. Essential Bash Scripts for Data Engineers -->
-          <article class="projectCard reveal" data-delay="2" data-project-card data-other-project data-search="Essential Bash Scripts Data Engineers Shell Linux AWS CLI jq Parquet-tools Automation" data-project="Essential Bash Scripts for Data Engineers" data-github="https://github.com/shivamdubey2310/Bash_Scripts_for_DEs">
+          <article class="projectCard reveal" data-delay="1" data-project-card data-other-project data-search="Essential Bash Scripts Data Engineers Shell Linux AWS CLI jq Parquet-tools Automation" data-project="Essential Bash Scripts for Data Engineers" data-slug="essential-bash-scripts-for-data-engineers" data-github="https://github.com/shivamdubey2310/Bash_Scripts_for_DEs" data-tags="" data-full-w="2048" data-full-h="689">
             <div class="projectThumbnail">
-              <img src="./Other_project_images/Essential Bash Scripts for Data Engineers.png" alt="Essential Bash Scripts for Data Engineers" loading="lazy" />
+              <picture>
+                <source type="image/webp" srcset="./Other_project_images/web/essential-bash-scripts-for-data-engineers-640.webp" />
+                <img src="./Other_project_images/Essential%20Bash%20Scripts%20for%20Data%20Engineers.png" alt="Banner titled 20 Bash Scripts for Data Engineers with icons for data cleaning, CSV, JSON, Amazon S3, log files and a database." width="640" height="215" loading="lazy" decoding="async" />
+              </picture>
             </div>
             <div class="projectContent">
               <div class="cardTop">
-                <h3>Essential Bash Scripts for Data Engineers</h3>
+                <h3><button type="button" class="projectOpen" aria-haspopup="dialog">Essential Bash Scripts for Data Engineers</button></h3>
                 <span class="pill">Scripts</span>
               </div>
               <p class="meta">A library of 20 modular, production-ready shell scripts automating essential data engineering maintenance tasks, from log rotation and S3 syncing to CSV schema validation.</p>
-              <div class="tags">
-                <span class="tag">Bash</span>
-                <span class="tag">Linux</span>
-                <span class="tag">AWS CLI</span>
-                <span class="tag">jq</span>
+              <div class="tags"><span class="tag">Bash</span><span class="tag">Linux</span><span class="tag">AWS CLI</span><span class="tag">jq</span></div>
+              <div class="cardActions">
+                <a class="projectGithubLink" href="https://github.com/shivamdubey2310/Bash_Scripts_for_DEs" target="_blank" rel="noopener noreferrer" aria-label="Essential Bash Scripts for Data Engineers on GitHub (opens in a new tab)">GitHub ↗</a>
               </div>
             </div>
           </article>
 
-          <!-- 3. PySpark Practice case study -->
-          <article class="projectCard reveal" data-delay="3" data-project-card data-other-project data-search="PySpark Practice Case Study Apache Spark DataFrame Window Functions UDFs Aggregations Jupyter" data-project="PySpark Practice case study" data-github="https://github.com/shivamdubey2310/pySpark_practice">
+          <article class="projectCard reveal" data-delay="1" data-project-card data-other-project data-search="PySpark Practice Case Study Apache Spark DataFrame Window Functions UDFs Aggregations Jupyter" data-project="PySpark Practice case study" data-slug="pyspark-practice-case-study" data-github="https://github.com/shivamdubey2310/pySpark_practice" data-tags="" data-full-w="640" data-full-h="360">
             <div class="projectThumbnail">
-              <img src="./Other_project_images/PySpark Practice case study.png" alt="PySpark Practice case study" loading="lazy" />
+              <picture>
+                <source type="image/webp" srcset="./Other_project_images/web/pyspark-practice-case-study-640.webp" />
+                <img src="./Other_project_images/PySpark%20Practice%20case%20study.png" alt="The PySpark logo." width="640" height="360" loading="lazy" decoding="async" />
+              </picture>
             </div>
             <div class="projectContent">
               <div class="cardTop">
-                <h3>PySpark Practice case study</h3>
+                <h3><button type="button" class="projectOpen" aria-haspopup="dialog">PySpark Practice case study</button></h3>
                 <span class="pill">Practice</span>
               </div>
               <p class="meta">A structured PySpark practice suite featuring 50 progressive data engineering problems (Easy to Advanced) based on a real-world Electric Vehicle specifications dataset.</p>
-              <div class="tags">
-                <span class="tag">PySpark</span>
-                <span class="tag">Window Functions</span>
-                <span class="tag">UDFs</span>
-                <span class="tag">Aggregations</span>
+              <div class="tags"><span class="tag">PySpark</span><span class="tag">Window Functions</span><span class="tag">UDFs</span><span class="tag">Aggregations</span></div>
+              <div class="cardActions">
+                <a class="projectGithubLink" href="https://github.com/shivamdubey2310/pySpark_practice" target="_blank" rel="noopener noreferrer" aria-label="PySpark Practice case study on GitHub (opens in a new tab)">GitHub ↗</a>
               </div>
             </div>
           </article>
 
-          <!-- 4. SQL Practice Problems -->
-          <article class="projectCard reveal" data-delay="1" data-project-card data-other-project data-search="SQL Practice Problems T-SQL Microsoft SQL Server Joins Subqueries Date Functions Jupyter" data-project="SQL Practice Problems" data-github="https://github.com/shivamdubey2310/57_sql_practice_problems/">
+          <article class="projectCard reveal" data-delay="1" data-project-card data-other-project data-search="SQL Practice Problems T-SQL Microsoft SQL Server Joins Subqueries Date Functions Jupyter" data-project="SQL Practice Problems" data-slug="sql-practice-problems" data-github="https://github.com/shivamdubey2310/57_sql_practice_problems/" data-tags="" data-full-w="1024" data-full-h="576">
             <div class="projectThumbnail">
-              <img src="./Other_project_images/SQL Practice Problems.png" alt="SQL Practice Problems" loading="lazy" />
+              <picture>
+                <source type="image/webp" srcset="./Other_project_images/web/sql-practice-problems-640.webp" />
+                <img src="./Other_project_images/SQL%20Practice%20Problems.png" alt="A database cylinder icon next to the letters SQL." width="640" height="360" loading="lazy" decoding="async" />
+              </picture>
             </div>
             <div class="projectContent">
               <div class="cardTop">
-                <h3>SQL Practice Problems</h3>
+                <h3><button type="button" class="projectOpen" aria-haspopup="dialog">SQL Practice Problems</button></h3>
                 <span class="pill">Practice</span>
               </div>
               <p class="meta">A repository of 57 progressive SQL challenges—ranging from basic retrieval to advanced reporting—solved using T-SQL on Microsoft SQL Server to demonstrate query mastery.</p>
-              <div class="tags">
-                <span class="tag">T-SQL</span>
-                <span class="tag">SQL Server</span>
-                <span class="tag">Joins</span>
-                <span class="tag">Subqueries</span>
+              <div class="tags"><span class="tag">T-SQL</span><span class="tag">SQL Server</span><span class="tag">Joins</span><span class="tag">Subqueries</span></div>
+              <div class="cardActions">
+                <a class="projectGithubLink" href="https://github.com/shivamdubey2310/57_sql_practice_problems/" target="_blank" rel="noopener noreferrer" aria-label="SQL Practice Problems on GitHub (opens in a new tab)">GitHub ↗</a>
               </div>
             </div>
           </article>
 
-          <!-- 5. MongoDB Practice case study -->
-          <article class="projectCard reveal" data-delay="2" data-project-card data-other-project data-search="MongoDB Practice Case Study NoSQL Aggregation Framework PyMongo Pipelines Jupyter" data-project="MongoDB Practice case study" data-github="https://github.com/shivamdubey2310/Mongodb_practice_questions">
+          <article class="projectCard reveal" data-delay="1" data-project-card data-other-project data-search="MongoDB Practice Case Study NoSQL Aggregation Framework PyMongo Pipelines Jupyter" data-project="MongoDB Practice case study" data-slug="mongodb-practice-case-study" data-github="https://github.com/shivamdubey2310/Mongodb_practice_questions" data-tags="nosql" data-full-w="1200" data-full-h="601">
             <div class="projectThumbnail">
-              <img src="./Other_project_images/MongoDB Practice case study.png" alt="MongoDB Practice case study" loading="lazy" />
+              <picture>
+                <source type="image/webp" srcset="./Other_project_images/web/mongodb-practice-case-study-640.webp" />
+                <img src="./Other_project_images/MongoDB%20Practice%20case%20study.png" alt="MongoDB logo on a dark green background." width="640" height="321" loading="lazy" decoding="async" />
+              </picture>
             </div>
             <div class="projectContent">
               <div class="cardTop">
-                <h3>MongoDB Practice case study</h3>
+                <h3><button type="button" class="projectOpen" aria-haspopup="dialog">MongoDB Practice case study</button></h3>
                 <span class="pill">Practice</span>
               </div>
               <p class="meta">A comprehensive data analysis suite solving 60 complex business queries on an 81,000-record dataset using the MongoDB Aggregation Framework and PyMongo.</p>
-              <div class="tags">
-                <span class="tag">MongoDB</span>
-                <span class="tag">Aggregation</span>
-                <span class="tag">PyMongo</span>
-                <span class="tag">NoSQL</span>
+              <div class="tags"><span class="tag">MongoDB</span><span class="tag">Aggregation</span><span class="tag">PyMongo</span><span class="tag">NoSQL</span></div>
+              <div class="cardActions">
+                <a class="projectGithubLink" href="https://github.com/shivamdubey2310/Mongodb_practice_questions" target="_blank" rel="noopener noreferrer" aria-label="MongoDB Practice case study on GitHub (opens in a new tab)">GitHub ↗</a>
               </div>
             </div>
           </article>
+
         </div>
       </section>
 
       <footer class="reveal" data-delay="1">
-        <div>© <span id="year"></span> Shivam Dubey</div>
+        <div>© <span id="year">2026</span> Shivam Dubey · Last updated <time datetime="2026-11-03">3 Nov 2026</time></div>
         <div class="contactBox">
           <a href="mailto:shivamdubey2310711@gmail.com">Email</a>
-          <a href="https://www.linkedin.com/in/shivam-dubey20" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://github.com/shivamdubey2310" target="_blank" rel="noopener">GitHub</a>
-          <a href="ShivamDubey.pdf" target="_blank" rel="noopener">Resume</a>
+          <a href="https://www.linkedin.com/in/shivam-dubey20" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/shivamdubey2310" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="ShivamDubey.pdf" download>Resume (PDF)</a>
         </div>
       </footer>
     </main>
   </div>
 
+  <a href="#top" id="toTop" class="toTop" aria-label="Back to top"><span aria-hidden="true">↑</span></a>
+
   <!-- Project Detail Modal -->
-  <div class="projectModal" id="projectModal" aria-hidden="true">
+  <div class="projectModal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="modalOverlay" data-modal-close></div>
     <div class="modalContent">
-      <button class="modalClose" data-modal-close aria-label="Close modal">&times;</button>
-      <div class="modalBody">
+      <button class="modalClose" type="button" data-modal-close aria-label="Close project details">&times;</button>
+      <div class="modalBody" id="modalBody">
         <div class="modalImage">
-          <img id="modalImg" src="" alt="Project architecture" />
+          <button type="button" class="zoomBtn" id="zoomBtn" aria-label="Zoom into the diagram">
+            <picture id="modalPicture"><img id="modalImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" width="1" height="1" /></picture>
+            <span class="zoomHint" aria-hidden="true">Click to zoom</span>
+          </button>
         </div>
         <div class="modalInfo">
-          <h2 id="modalTitle"></h2>
+          <h2 id="modalTitle">Project details</h2>
           <div id="modalContent"></div>
         </div>
+      </div>
+      <div class="modalFooter">
+        <button type="button" class="btn" id="prevProject">← Previous</button>
+        <span id="modalCount" aria-live="polite"></span>
+        <button type="button" class="btn primary" id="nextProject">Next project →</button>
       </div>
     </div>
   </div>
 
-  <script src="./assets/app.js"></script>
-  <script src="./assets/projects.js"></script>
+  <!-- Diagram lightbox -->
+  <dialog id="lightbox" class="lightbox" aria-label="Diagram viewer">
+    <button type="button" class="lbClose" aria-label="Close diagram viewer">&times;</button>
+    <div class="lbBody"><picture id="lbPicture"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" width="1" height="1" /></picture></div>
+    <span class="lbHint" aria-hidden="true">Click the diagram to toggle actual size · Esc to close</span>
+  </dialog>
+
+  <!-- Privacy-friendly analytics (disabled). TODO(confirm): create a GoatCounter site, replace CODE, then uncomment.
+  <script data-goatcounter="https://CODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  -->
+  <script src="./assets/app.js" defer></script>
+  <script src="./assets/projects.js" defer></script>
 </body>
 </html>

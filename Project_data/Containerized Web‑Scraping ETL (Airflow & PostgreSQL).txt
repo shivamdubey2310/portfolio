@@ -22,3 +22,10 @@ Key Highlights
 - Raw HTML to SQL: Demonstrated the ability to convert messy, unstructured web content into a strict Relational Schema (jobs, job_type).
 - Modern Airflow Deployment: Showcased familiarity with the Astro CLI, the industry-standard tool for managing Airflow in production-like environments.
 - Modular Architecture: Decoupled the Extraction, Transformation (Pandas), and Loading (SQLAlchemy) logic for easier debugging and maintenance.
+
+# TODO(confirm): optional sections for the detail view. To use them, remove the leading "# " and fill in with facts from the resume.
+# My Role
+# <one line: what you owned>
+# Project Info
+# - Year: <year>
+# - Status: <Completed | In progress | Production>

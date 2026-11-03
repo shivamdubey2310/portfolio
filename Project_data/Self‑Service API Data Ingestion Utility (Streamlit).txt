@@ -22,3 +22,10 @@ Key Highlights
 - Internal Tooling: Demonstrates the ability to build "Internal Developer Platforms" (IDP) or utilities that increase the productivity of the entire data team.
 - Error Handling: Features robust exception management (e.g., catching 404/500 errors) to guide users when an API endpoint is invalid.
 - Rapid Prototyping: Showcases how quickly I can turn a Python script into a deployable web app using Streamlit.
+
+# TODO(confirm): optional sections for the detail view. To use them, remove the leading "# " and fill in with facts from the resume.
+# My Role
+# <one line: what you owned>
+# Project Info
+# - Year: <year>
+# - Status: <Completed | In progress | Production>

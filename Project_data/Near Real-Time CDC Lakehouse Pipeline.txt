@@ -1,5 +1,10 @@
 Near Real-Time CDC Lakehouse Pipeline
 
+Results
+Downstream queries see near-current data instead of day-old snapshots.
+- 24h → sub-10 min | Data latency
+- 1M+ | Records processed
+
 Overview
 
 A metadata-driven, near real-time Change Data Capture (CDC) Lakehouse pipeline built on Microsoft Azure that incrementally ingests OLTP changes (1M+ records) into a Delta Lake using a Medallion Architecture (Bronze → Silver → Gold).
@@ -48,8 +53,6 @@ I engineered a stateful, idempotent micro-batch architecture that balances fresh
 
 Key Highlights
 
-- Results: Data latency reduced from 24 hours to under 10 minutes over 1M+ records; downstream queries see near-current data instead of day-old snapshots.
-
 - Enterprise-Grade Design: Implements Medallion Architecture and ACID Delta MERGE upserts, patterns widely used in production lakehouse environments.
 
 - Idempotent & Retry-Safe: Metadata-driven version control guarantees consistent re-runs and fault tolerance.
@@ -59,3 +62,10 @@ Key Highlights
 - Late Data Handling: Watermark logic ensures late-arriving records are safely processed.
 
 - Zero-Compute Analytics: Gold tables are queryable via Synapse Serverless (OPENROWSET) with no dedicated compute, because only incremental changes are processed.
+
+# TODO(confirm): optional sections for the detail view. To use them, remove the leading "# " and fill in with facts from the resume.
+# My Role
+# <one line: what you owned>
+# Project Info
+# - Year: <year>
+# - Status: <Completed | In progress | Production>

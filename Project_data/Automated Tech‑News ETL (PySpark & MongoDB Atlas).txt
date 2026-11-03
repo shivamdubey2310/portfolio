@@ -22,3 +22,10 @@ Key Highlights
 - Cloud Integration: Connected local processing scripts to a cloud-hosted database (MongoDB Atlas), mimicking a hybrid-cloud environment.
 - Format Efficiency: Demonstrated knowledge of modern data formats by converting raw JSON extraction into optimized Parquet storage before final loading.
 - Automated Ingestion: Deployed Cron schedulers to maintain a "fresh" data lake of daily headlines without manual execution.
+
+# TODO(confirm): optional sections for the detail view. To use them, remove the leading "# " and fill in with facts from the resume.
+# My Role
+# <one line: what you owned>
+# Project Info
+# - Year: <year>
+# - Status: <Completed | In progress | Production>

@@ -22,3 +22,10 @@ Key Highlights
 - Advanced Modeling: Implemented a Factless Fact Table (Customer_Promotion_Event) to track non-transactional event coverage, a key requirement for marketing analysis.
 - Infrastructure as Code: Utilized SQL scripts for automated schema creation and environment variable management (.env) for secure database credentials.
 - Data Integrity: Enforced strict schema validation during the transformation phase to ensure high-quality data ingestion.
+
+# TODO(confirm): optional sections for the detail view. To use them, remove the leading "# " and fill in with facts from the resume.
+# My Role
+# <one line: what you owned>
+# Project Info
+# - Year: <year>
+# - Status: <Completed | In progress | Production>

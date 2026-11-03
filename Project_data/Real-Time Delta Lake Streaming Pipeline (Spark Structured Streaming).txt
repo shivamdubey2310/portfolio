@@ -23,3 +23,10 @@ Key Highlights
 - Stream Processing: Demonstrated the ability to write "Micro-batch" processing code, a step up from standard batch ETL.
 - Metadata Management: The separation of schema definition (JSON) from the processing logic (Main.py) shows a mature, modular coding style.
 - Reliability: Focused on "Checkpointing" and recovery strategies, which are often overlooked in small projects but essential in production.
+
+# TODO(confirm): optional sections for the detail view. To use them, remove the leading "# " and fill in with facts from the resume.
+# My Role
+# <one line: what you owned>
+# Project Info
+# - Year: <year>
+# - Status: <Completed | In progress | Production>

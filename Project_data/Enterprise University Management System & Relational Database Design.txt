@@ -22,3 +22,10 @@ Key Highlights
 - OLTP vs. OLAP: Demonstrated strong understanding of Transactional Design (3NF), complementing my Data Warehousing skills.
 - Enterprise Documentation: Produced over 6,000 lines of technical documentation, including Data Dictionaries and Field Specifications—a critical skill for working in large corporate teams.
 - Resource Management: Modeled real-world constraints like classroom scheduling conflicts directly in SQL.
+
+# TODO(confirm): optional sections for the detail view. To use them, remove the leading "# " and fill in with facts from the resume.
+# My Role
+# <one line: what you owned>
+# Project Info
+# - Year: <year>
+# - Status: <Completed | In progress | Production>

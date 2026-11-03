@@ -28,4 +28,4 @@ Scalable Spotify Hit Predictor (PySpark MLlib & Streamlit) - https://github.com/
 
 Self‑Service API Data Ingestion Utility (Streamlit) - https://github.com/shivamdubey2310/API_data_extractor
 
-
+Near Real-Time CDC Lakehouse Pipeline - https://github.com/shivamdubey2310/CDC-Lakehouse-Pipeline  (TODO(confirm): URL as used on the site card; not verified)

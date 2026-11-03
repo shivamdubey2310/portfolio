@@ -22,3 +22,10 @@ Key Highlights
 - Full-Stack Data Awareness: Proves I can handle the "Last Mile" of data engineering—delivering clean data to business users.
 - Data Quality Enforcement: Implemented specific rules to filter out error rows and duplicates before they could skew the final metrics.
 - Visual Storytelling: Moved beyond simple tables to create KPIs and Trend Lines that answer business questions instantly.
+
+# TODO(confirm): optional sections for the detail view. To use them, remove the leading "# " and fill in with facts from the resume.
+# My Role
+# <one line: what you owned>
+# Project Info
+# - Year: <year>
+# - Status: <Completed | In progress | Production>

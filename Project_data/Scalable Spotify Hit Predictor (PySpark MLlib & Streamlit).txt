@@ -22,3 +22,10 @@ Key Highlights
 - Machine Learning Engineering: Demonstrated the ability to wrap an ML algorithm into a deployable product, a key skill for ML Engineer roles.
 - Spark ML: Showcased familiarity with Spark's Machine Learning library, proving I can handle ML tasks on large datasets that wouldn't fit in standard memory.
 - Full-Stack Data App: Built the entire lifecycle: Data Cleaning → Model Training → User Interface.
+
+# TODO(confirm): optional sections for the detail view. To use them, remove the leading "# " and fill in with facts from the resume.
+# My Role
+# <one line: what you owned>
+# Project Info
+# - Year: <year>
+# - Status: <Completed | In progress | Production>

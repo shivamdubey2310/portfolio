@@ -22,3 +22,10 @@ Key Highlights
 - Cost-Effective Architecture: Designed a "serverless-like" efficiency running on a standard Linux environment without the overhead of container orchestration.
 - Full Observability: Built a comprehensive logging system (pipeline.log, cron.log) to track execution status and debug failures in real-time.
 - Schema Design: Successfully mapped complex hierarchical JSON data into a strictly typed PostgreSQL relational schema.
+
+# TODO(confirm): optional sections for the detail view. To use them, remove the leading "# " and fill in with facts from the resume.
+# My Role
+# <one line: what you owned>
+# Project Info
+# - Year: <year>
+# - Status: <Completed | In progress | Production>

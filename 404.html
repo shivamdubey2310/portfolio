@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="robots" content="noindex" />
+  <title>Page not found — Shivam Dubey</title>
+  <meta name="description" content="This page does not exist. Head back to the portfolio of Shivam Dubey, Data Engineer." />
+  <link rel="icon" href="/portfolio/assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/portfolio/assets/styles.css" />
+  <!-- Absolute /portfolio/ paths because GitHub Pages serves 404.html from any URL depth.
+       TODO(confirm): if you move to a custom domain or a user site (no /portfolio/ prefix), change these to /assets/... -->
+</head>
+<body>
+  <script>
+    try {
+      var d = localStorage.getItem('darkMode');
+      if (d === 'true' || (d === null && window.matchMedia('(prefers-color-scheme: dark)').matches)) document.body.classList.add('dark-mode');
+    } catch (e) {}
+  </script>
+  <div class="container">
+    <main id="main">
+      <section class="hero" aria-label="Page not found" style="grid-template-columns:1fr;">
+        <div class="panel left">
+          <div class="kicker"><span>Error 404</span></div>
+          <h1 class="heroName">Page not found</h1>
+          <p class="subtitle">That page does not exist, or it moved. Here is where most people want to go:</p>
+          <div class="heroActions">
+            <a class="btn primary" href="/portfolio/">Home</a>
+            <a class="btn" href="/portfolio/projects.html">Projects</a>
+            <a class="btn" href="/portfolio/#experience">Experience</a>
+            <a class="btn" href="mailto:shivamdubey2310711@gmail.com">Email me</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -22,3 +22,10 @@ Key Highlights
 - Semi-structured to Structured: Demonstrated the ability to convert NoSQL-style JSON data into a clean SQL schema.
 - Robust Error Handling: Implemented logging and modular task design to ensure pipeline reliability.
 - Container Ready: Designed the workflow to be compatible with Dockerized Airflow environments.
+
+# TODO(confirm): optional sections for the detail view. To use them, remove the leading "# " and fill in with facts from the resume.
+# My Role
+# <one line: what you owned>
+# Project Info
+# - Year: <year>
+# - Status: <Completed | In progress | Production>

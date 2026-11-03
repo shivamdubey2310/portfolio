@@ -22,3 +22,10 @@ Key Highlights
 - Astro CLI: Demonstrated proficiency with modern Airflow tooling (Astro), showing I am up-to-date with current industry standards.
 - Robust Logging: Built a comprehensive logging system (ETL_log.log) that tracks every stage of the extraction and loading process for easier debugging.
 - API Relationship Mapping: Successfully joined disparate API endpoints (Films, Species, Locations) into a cohesive analytical dataset.
+
+# TODO(confirm): optional sections for the detail view. To use them, remove the leading "# " and fill in with facts from the resume.
+# My Role
+# <one line: what you owned>
+# Project Info
+# - Year: <year>
+# - Status: <Completed | In progress | Production>

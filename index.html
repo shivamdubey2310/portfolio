@@ -4,29 +4,107 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light dark" />
-  <title>Shivam Dubey — Data Engineer Portfolio</title>
-  <meta name="description" content="Shivam Dubey is a Data Engineer at Bizfy Solutions building production ELT pipelines and Medallion Delta Lakes on Databricks, Microsoft Fabric and Azure. Open to Data Engineer roles worldwide." />
+  <meta name="theme-color" content="#0f766e" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)" />
+  <title>Shivam Dubey — Data Engineer (Databricks, Fabric, Azure)</title>
+  <meta name="description" content="Data Engineer at Bizfy Solutions building production ELT pipelines and Medallion Delta Lakes on Databricks, Microsoft Fabric and Azure. Open to roles worldwide." />
+  <meta name="author" content="Shivam Dubey" />
+  <!-- TODO(confirm): canonical/OG URLs assume GitHub Pages at https://shivamdubey2310.github.io/portfolio/. Update if you use a custom domain. -->
+  <link rel="canonical" href="https://shivamdubey2310.github.io/portfolio/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Shivam Dubey — Data Engineer" />
+  <meta property="og:title" content="Shivam Dubey — Data Engineer" />
+  <meta property="og:description" content="Data Engineer at Bizfy Solutions building production ELT pipelines and Medallion Delta Lakes on Databricks, Microsoft Fabric and Azure. Open to roles worldwide." />
+  <meta property="og:url" content="https://shivamdubey2310.github.io/portfolio/" />
+  <meta property="og:image" content="https://shivamdubey2310.github.io/portfolio/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Shivam Dubey, Data Engineer: 50M+ daily records, 99.9% pipeline reliability, 45% lower query latency, DP-700 certified." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Shivam Dubey — Data Engineer" />
+  <meta name="twitter:description" content="Data Engineer at Bizfy Solutions building production ELT pipelines and Medallion Delta Lakes on Databricks, Microsoft Fabric and Azure. Open to roles worldwide." />
+  <meta name="twitter:image" content="https://shivamdubey2310.github.io/portfolio/assets/og-image.png" />
+  <meta name="twitter:image:alt" content="Shivam Dubey, Data Engineer: 50M+ daily records, 99.9% pipeline reliability, 45% lower query latency, DP-700 certified." />
+
+  <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="./assets/favicon.ico" sizes="48x48" />
+  <link rel="apple-touch-icon" href="./assets/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="./site.webmanifest" />
   <link rel="stylesheet" href="./assets/styles.css" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://shivamdubey2310.github.io/portfolio/#person",
+  "name": "Shivam Dubey",
+  "jobTitle": "Data Engineer",
+  "url": "https://shivamdubey2310.github.io/portfolio/",
+  "email": "mailto:shivamdubey2310711@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Indore",
+    "addressCountry": "IN"
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Bizfy Solutions"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "School of Data Science and Forecasting, DAVV, Indore"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/shivam-dubey20",
+    "https://github.com/shivamdubey2310"
+  ],
+  "knowsAbout": [
+    "Data engineering",
+    "ELT pipelines",
+    "Medallion architecture",
+    "Delta Lake",
+    "Databricks",
+    "Microsoft Fabric",
+    "Azure Data Factory",
+    "Apache Spark",
+    "PySpark",
+    "Apache Airflow",
+    "SQL",
+    "Python",
+    "Data modeling"
+  ]
+}
+  </script>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="brand">
-        <div>
-          <div style="font-size:38px; font-weight:800;">Shivam Dubey</div>
-          <div style="font-size:12px;color:var(--muted);">Data Engineer • Indore, India</div>
-        </div>
-      </div>
-      <nav aria-label="Primary">
-        <a href="./index.html" aria-current="page">Home</a>
+  <script>
+    /* Runs before first paint: marks JS-enabled and applies the saved/system theme without a flash. */
+    document.documentElement.classList.add('js');
+    try {
+      var d = localStorage.getItem('darkMode');
+      if (d === 'true' || (d === null && window.matchMedia('(prefers-color-scheme: dark)').matches)) document.body.classList.add('dark-mode');
+    } catch (e) {}
+  </script>
+  <a class="skipLink" href="#main">Skip to main content</a>
+
+  <div class="container" id="top">
+    <header class="siteHeader">
+      <a class="brand" href="./index.html">
+        <span class="brandName">Shivam Dubey</span>
+        <span class="brandRole">Data Engineer • Indore, India</span>
+      </a>
+      <nav id="siteNav" aria-label="Primary">
+        <a href="#experience" data-section="experience">Experience</a>
         <a href="./projects.html">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#education">Education</a>
-        <a href="#contact" class="cta">Contact</a>
-        <button class="darkModeToggle" id="darkModeToggle" aria-label="Toggle dark mode">
-          <svg class="sunIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <a href="#skills" data-section="skills">Skills</a>
+        <a href="#certifications" data-section="certifications">Certifications</a>
+        <a href="#education" data-section="education">Education</a>
+        <!-- Writing: when the first post is added, remove [hidden] from #writing in index.html and add a nav link here. -->
+        <a href="#contact" data-section="contact" class="cta">Contact</a>
+      </nav>
+      <div class="headerTools">
+        <button class="darkModeToggle" id="darkModeToggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+          <svg class="sunIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
             <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -37,33 +115,36 @@
             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
           </svg>
-          <svg class="moonIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <svg class="moonIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
         </button>
-      </nav>
+        <button class="navToggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="siteNav"><span class="bar" aria-hidden="true"></span></button>
+      </div>
     </header>
 
-    <main>
-      <section class="hero">
+    <main id="main" tabindex="-1">
+      <section class="hero" aria-label="Introduction">
         <div class="panel left reveal" data-delay="1">
-          <div class="kicker">
+          <div class="kicker availability">
             <span class="dot" aria-hidden="true"></span>
-            <span>Data Engineer • Production pipelines • Lakehouse • Open to roles worldwide</span>
+            <span>Open to Data Engineer roles worldwide</span>
           </div>
-          <h1>
-            I turn raw data into
-            <span style="color: #0f766e;">trusted products</span>.
-          </h1>
-          <p class="subtitle">
-            Hi, I'm <strong>Shivam Dubey</strong> — a Data Engineer at <strong>Bizfy Solutions</strong> (intern since Mar 2026, full-time since Sep 2026) building production ELT pipelines and Medallion Delta Lakes on Databricks, Microsoft Fabric and Azure with PySpark, SQL, Airflow and ADF.
-            Microsoft DP-700 certified; pursuing an integrated M.Tech in AI &amp; Data Science (DAVV, 2027).
-          </p>
+          <h1 class="heroName">Shivam Dubey</h1>
+          <p class="identity">Data Engineer | Databricks · Microsoft Fabric · Azure | Indore, India | Open to relocation</p>
+          <p class="tagline">I turn raw data into <span>trusted products</span>.</p>
+
           <div class="heroActions">
             <a class="btn primary" href="./projects.html">View projects</a>
-            <a class="btn" href="ShivamDubey.pdf" target="_blank" rel="noopener">Download resume</a>
-            <a class="btn" href="https://www.linkedin.com/in/shivam-dubey20" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn" href="ShivamDubey.pdf" download>Resume <span class="btnMeta">PDF · 361 KB</span></a>
+            <a class="btn" href="mailto:shivamdubey2310711@gmail.com">Email</a>
+            <a class="btn" href="https://www.linkedin.com/in/shivam-dubey20" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
+
+          <p class="subtitle">
+            Data Engineer at <strong>Bizfy Solutions</strong> (intern since Mar 2026, full-time since Sep 2026) building production ELT pipelines and Medallion Delta Lakes on Databricks, Microsoft Fabric and Azure with PySpark, SQL, Airflow and ADF.
+            Microsoft DP-700 certified; pursuing an integrated M.Tech in AI &amp; Data Science (DAVV, 2027).
+          </p>
 
           <div class="statsBar panel reveal" data-delay="2" style="margin-top:18px; box-shadow:none;">
             <div class="stat">
@@ -111,7 +192,7 @@
         </div>
       </section>
 
-      <section class="reveal" data-delay="1">
+      <section id="featured" class="reveal" data-delay="1">
         <div class="sectionHead">
           <h2>Featured projects</h2>
           <div class="hint">The highlight reel — see all on the Projects page</div>
@@ -124,7 +205,7 @@
               <span class="pill">CDC</span>
             </div>
             <p class="meta">Metadata-driven CDC on Azure (SQL Change Tracking + ADF Tumbling Window Triggers) that ingests 1M+ records into a Medallion Delta Lake, cutting data latency from 24h to sub-10 min. Downstream queries see near-current data instead of day-old snapshots.</p>
-            <div class="pipeline" aria-label="Pipeline summary">
+            <div class="pipeline" role="group" aria-label="Pipeline summary">
               <div class="pipeStep"><span class="pipeDot" aria-hidden="true"></span>CDC Extract</div>
               <div class="pipeArrow" aria-hidden="true">→</div>
               <div class="pipeStep"><span class="pipeDot" aria-hidden="true"></span>Bronze</div>
@@ -139,6 +220,7 @@
               <span class="tag">Delta Lake</span>
               <span class="tag">Synapse Analytics</span>
             </div>
+            <a class="cardLink" href="./projects.html#near-real-time-cdc-lakehouse-pipeline">Read the case study →</a>
           </article>
 
           <article class="card reveal" data-delay="2">
@@ -147,7 +229,7 @@
               <span class="pill">Real-time</span>
             </div>
             <p class="meta">Delhi weather telemetry streamed through Eventstreams into Eventhouse with sub-second latency, replacing batch polling. Dual Fabric Activators alert on high/low temperature, replacing manual monitoring.</p>
-            <div class="pipeline" aria-label="Pipeline summary">
+            <div class="pipeline" role="group" aria-label="Pipeline summary">
               <div class="pipeStep"><span class="pipeDot" aria-hidden="true"></span>Telemetry</div>
               <div class="pipeArrow" aria-hidden="true">→</div>
               <div class="pipeStep"><span class="pipeDot" aria-hidden="true"></span>Eventstream</div>
@@ -162,6 +244,7 @@
               <span class="tag">Eventhouse</span>
               <span class="tag">Real-time Dashboard</span>
             </div>
+            <a class="cardLink" href="./projects.html#automated-weather-monitoring-in-microsoft-fabric">Read the case study →</a>
           </article>
 
           <article class="card reveal" data-delay="3">
@@ -185,6 +268,7 @@
               <span class="tag">Delta Lake</span>
               <span class="tag">Power BI</span>
             </div>
+            <a class="cardLink" href="./projects.html#end-to-end-medallion-etl-pipeline-via-microsoft-fabric">Read the case study →</a>
           </article>
 
           <article class="card reveal" data-delay="4">
@@ -208,6 +292,7 @@
               <span class="tag">Dimensional Modeling</span>
               <span class="tag">Indexing</span>
             </div>
+            <a class="cardLink" href="./projects.html#automated-e-commerce-data-warehouse-star-schema-design">Read the case study →</a>
           </article>
         </div>
 
@@ -357,36 +442,58 @@
 
         <div class="grid2">
           <article class="card reveal" data-delay="1">
-            <div class="cardTop">
-              <h3>Microsoft Fabric Data Engineer Associate (DP-700)</h3>
-              <span class="pill">Microsoft</span>
+            <div class="certHead">
+              <svg class="certBadge" viewBox="0 0 56 56" role="img" aria-label="Microsoft certification badge: DP-700">
+                <rect width="56" height="56" rx="14" fill="#0f766e"/>
+                <rect x="3" y="3" width="50" height="50" rx="11" fill="none" stroke="#5eead4" stroke-opacity=".6"/>
+                <text x="28" y="29" text-anchor="middle" font-size="13" font-weight="800" fill="#ffffff" font-family="ui-sans-serif,system-ui,sans-serif">DP-700</text>
+                <text x="28" y="40" text-anchor="middle" font-size="8" font-weight="700" fill="#ccfbf1" font-family="ui-sans-serif,system-ui,sans-serif">MICROSOFT</text>
+              </svg>
+              <div>
+                <div class="cardTop">
+                  <h3>Microsoft Fabric Data Engineer Associate (DP-700)</h3>
+                  <span class="pill">Microsoft</span>
+                </div>
+                <p class="meta"><time class="certDate" datetime="2026-02">Feb 2026</time> • Microsoft Certified — validates expertise in designing and implementing enterprise-scale data solutions on Microsoft Fabric.</p>
+              </div>
             </div>
-            <p class="meta">Feb 2026 • Microsoft Certified — validates expertise in designing and implementing enterprise-scale data solutions on Microsoft Fabric.</p>
             <div class="tags">
-              <span class="tag">Microsoft Fabric</span>
-              <span class="tag">Data Lakehouse</span>
-              <span class="tag">Real-time Intelligence</span>
+                <span class="tag">Microsoft Fabric</span>
+                <span class="tag">Data Lakehouse</span>
+                <span class="tag">Real-time Intelligence</span>
             </div>
             <div style="margin-top:12px;">
-              <a class="btn" href="https://learn.microsoft.com/api/credentials/share/en-us/ShivamDubey-7256/8B53C092106B45E4?sharingId=7010AFC8DEE83D1C" target="_blank" rel="noopener">View Credential →</a>
+              <a class="btn" href="https://learn.microsoft.com/api/credentials/share/en-us/ShivamDubey-7256/8B53C092106B45E4?sharingId=7010AFC8DEE83D1C" target="_blank" rel="noopener noreferrer" aria-label="Verify credential: Microsoft Fabric Data Engineer Associate (DP-700) (opens in a new tab)">Verify credential ↗</a>
             </div>
           </article>
 
           <article class="card reveal" data-delay="2">
-            <div class="cardTop">
-              <h3>Astronomer Certification for Apache Airflow 3 Fundamentals</h3>
-              <span class="pill">Astronomer</span>
+            <div class="certHead">
+              <svg class="certBadge" viewBox="0 0 56 56" role="img" aria-label="Astronomer certification badge: Apache Airflow 3 Fundamentals">
+                <rect width="56" height="56" rx="14" fill="#0f766e"/>
+                <rect x="3" y="3" width="50" height="50" rx="11" fill="none" stroke="#5eead4" stroke-opacity=".6"/>
+                <text x="28" y="29" text-anchor="middle" font-size="13" font-weight="800" fill="#ffffff" font-family="ui-sans-serif,system-ui,sans-serif">AF 3</text>
+                <text x="28" y="40" text-anchor="middle" font-size="8" font-weight="700" fill="#ccfbf1" font-family="ui-sans-serif,system-ui,sans-serif">ASTRONOMER</text>
+              </svg>
+              <div>
+                <div class="cardTop">
+                  <h3>Astronomer Certification for Apache Airflow 3 Fundamentals</h3>
+                  <span class="pill">Astronomer</span>
+                </div>
+                <p class="meta"><time class="certDate" datetime="2026-02">Feb 2026</time> • Astronomer Certified — demonstrates proficiency in Apache Airflow pipeline orchestration fundamentals.</p>
+              </div>
             </div>
-            <p class="meta">Feb 2026 • Astronomer Certified — demonstrates proficiency in Apache Airflow pipeline orchestration fundamentals.</p>
             <div class="tags">
-              <span class="tag">Apache Airflow</span>
-              <span class="tag">Pipeline Orchestration</span>
+                <span class="tag">Apache Airflow</span>
+                <span class="tag">Pipeline Orchestration</span>
             </div>
             <div style="margin-top:12px;">
-              <a class="btn" href="https://www.credly.com/badges/c5723127-2239-4396-9d45-524a67b0c350/public_url" target="_blank" rel="noopener">View Credential →</a>
+              <a class="btn" href="https://www.credly.com/badges/c5723127-2239-4396-9d45-524a67b0c350/public_url" target="_blank" rel="noopener noreferrer" aria-label="Verify credential: Astronomer Certification for Apache Airflow 3 Fundamentals (opens in a new tab)">Verify credential ↗</a>
             </div>
           </article>
+
         </div>
+        <!-- TODO(confirm): badges above are generic monogram icons (not the vendors' logos). To use the official badge images, download them from your Credly / Microsoft Learn pages and swap the <svg class="certBadge"> for <img>. -->
       </section>
 
       <section id="education" class="reveal" data-delay="1">
@@ -397,7 +504,7 @@
 
         <div class="grid2">
           <article class="card reveal" data-delay="1">
-            <h3 style="margin-top:0;">Integrated M.Tech — AI & Data Science</h3>
+            <h3 style="margin-top:0;">Integrated M.Tech — AI &amp; Data Science</h3>
             <p class="meta">School of Data Science and Forecasting (SDSF), DAVV, Indore • 2022–2027 (expected May 2027) • CGPA 7.1/10</p>
             <div class="tags">
               <span class="tag">DBMS</span>
@@ -411,9 +518,9 @@
         </div>
       </section>
 
-      <section id="leadership" class="reveal" data-delay="1">
+      <section id="leadership" class="reveal" data-delay="1" data-nav-parent="education">
         <div class="sectionHead">
-          <h2>Leadership & Activity</h2>
+          <h2>Leadership &amp; Activity</h2>
           <div class="hint">Community + mentoring</div>
         </div>
 
@@ -438,6 +545,25 @@
         </div>
       </section>
 
+      <!-- Writing scaffold: hidden until there is a first post. To publish: delete the hidden attribute, add the post card below, and add a nav link in the header. -->
+      <section id="writing" class="reveal" data-delay="1" hidden>
+        <div class="sectionHead">
+          <h2>Writing</h2>
+          <div class="hint">Notes on data engineering</div>
+        </div>
+        <div class="postList">
+          <!--
+          <article class="card">
+            <div class="cardTop">
+              <h3><a href="POST_URL">Post title</a></h3>
+              <span class="pill">Mon YYYY</span>
+            </div>
+            <p class="meta">One-sentence summary.</p>
+          </article>
+          -->
+        </div>
+      </section>
+
       <section id="contact" class="reveal" data-delay="1">
         <div class="sectionHead">
           <h2>Contact</h2>
@@ -448,36 +574,66 @@
           <div class="card reveal" data-delay="1">
             <h3 style="margin-top:0;">Reach me</h3>
             <p class="meta" style="margin-top:0;">Working Data Engineer, open to Data Engineer roles worldwide and open to relocation.</p>
-            <div class="tags">
-              <a class="tag" href="mailto:shivamdubey2310711@gmail.com">shivamdubey2310711@gmail.com</a>
-              <a class="tag" href="https://github.com/shivamdubey2310" target="_blank" rel="noopener">GitHub</a>
-              <a class="tag" href="https://www.linkedin.com/in/shivam-dubey20" target="_blank" rel="noopener">LinkedIn</a>
-            </div>
+            <ul class="contactList">
+              <li>
+                <a class="tag" href="mailto:shivamdubey2310711@gmail.com">shivamdubey2310711@gmail.com</a>
+                <button type="button" class="btn small" data-copy="shivamdubey2310711@gmail.com">Copy email</button>
+                <span class="copyStatus" data-copy-status role="status" aria-live="polite"></span>
+              </li>
+              <li>
+                <a class="tag" href="https://www.linkedin.com/in/shivam-dubey20" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a class="tag" href="https://github.com/shivamdubey2310" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </li>
+            </ul>
+            <ul class="contactFacts">
+              <li><strong>Location:</strong> Indore, India (open to relocation)</li>
+              <li><strong>Timezone:</strong> IST (GMT+5:30)</li>
+              <!-- TODO(confirm): typical reply time, e.g. <li><strong>Reply time:</strong> within 1–2 working days</li> -->
+            </ul>
           </div>
 
           <div class="card reveal" data-delay="2">
             <h3 style="margin-top:0;">Quick message</h3>
-            <p class="meta">Click to email me with a pre-filled subject.</p>
+            <p class="meta">Email me with a pre-filled subject, or grab my resume.</p>
             <div style="display:flex; gap:10px; flex-wrap:wrap;">
               <a class="btn primary" href="mailto:shivamdubey2310711@gmail.com?subject=Portfolio%20Inquiry">Email me</a>
-              <a class="btn" href="ShivamDubey.pdf" target="_blank" rel="noopener">Resume</a>
+              <a class="btn" href="ShivamDubey.pdf" download>Resume <span class="btnMeta">PDF · 361 KB</span></a>
             </div>
+            <!-- Optional contact form. It stays hidden until you set data-endpoint (Formspree / Web3Forms); on any error it falls back to mailto.
+                 TODO(confirm): form endpoint, e.g. data-endpoint="https://formspree.io/f/XXXXXXXX" -->
+            <form id="contactForm" class="contactForm" hidden data-endpoint="" data-fallback-email="shivamdubey2310711@gmail.com" method="post" novalidate>
+              <label>Name <input type="text" name="name" autocomplete="name" required /></label>
+              <label>Email <input type="email" name="email" autocomplete="email" required /></label>
+              <label>Message <textarea name="message" rows="4" required></textarea></label>
+              <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" />
+              <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+                <button type="submit" class="btn primary">Send message</button>
+                <span class="copyStatus" data-form-status role="status" aria-live="polite"></span>
+              </div>
+            </form>
           </div>
         </div>
       </section>
 
+
       <footer class="reveal" data-delay="1">
-        <div>© <span id="year"></span> Shivam Dubey</div>
+        <div>© <span id="year">2026</span> Shivam Dubey · Last updated <time datetime="2026-11-03">3 Nov 2026</time></div>
         <div class="contactBox">
           <a href="mailto:shivamdubey2310711@gmail.com">Email</a>
-          <a href="https://www.linkedin.com/in/shivam-dubey20" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://github.com/shivamdubey2310" target="_blank" rel="noopener">GitHub</a>
-          <a href="ShivamDubey.pdf" target="_blank" rel="noopener">Resume</a>
+          <a href="https://www.linkedin.com/in/shivam-dubey20" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/shivamdubey2310" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="ShivamDubey.pdf" download>Resume (PDF)</a>
         </div>
       </footer>
     </main>
   </div>
 
-  <script src="./assets/app.js"></script>
+  <a href="#top" id="toTop" class="toTop" aria-label="Back to top"><span aria-hidden="true">↑</span></a>
+
+
+  <!-- Privacy-friendly analytics (disabled). TODO(confirm): create a GoatCounter site, replace CODE, then uncomment.
+  <script data-goatcounter="https://CODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  -->
+  <script src="./assets/app.js" defer></script>
 </body>
 </html>

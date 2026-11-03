@@ -1,5 +1,9 @@
 End-to-End Medallion ETL Pipeline via Microsoft Fabric
 
+Results
+Gold tables feed Power BI AQI forecasting dashboards.
+- 10K+ | AQI records processed
+
 Overview
 A production-style batch ETL pipeline implementing the Bronze-Silver-Gold (Medallion) architecture on Microsoft Fabric. It ingests air quality data from the AirNow API, processes 10K+ AQI records with config-driven PySpark and structured logging, and serves Gold tables to Power BI AQI forecasting dashboards.
 
@@ -22,7 +26,13 @@ I designed a multi-hop pipeline using Fabric Notebooks to enforce data quality s
 - Config-Driven Design: Pipeline behavior is driven by configuration, with structured logging across all PySpark stages.
 
 Key Highlights
-- Results: 10K+ AQI records processed end to end from the AirNow API through Bronze, Silver and Gold, feeding Power BI AQI forecasting dashboards.
 - Lakehouse Architecture: Implements the Medallion Architecture, the standard design pattern for modern data platforms.
 - Config-Driven PySpark: Configuration-driven transformations with structured logging make runs observable and easy to adjust.
 - Delta Lake Features: Utilized Delta Lake capabilities for ACID transactions, ensuring that downstream reports never see partial or corrupt data loads.
+
+# TODO(confirm): optional sections for the detail view. To use them, remove the leading "# " and fill in with facts from the resume.
+# My Role
+# <one line: what you owned>
+# Project Info
+# - Year: <year>
+# - Status: <Completed | In progress | Production>
