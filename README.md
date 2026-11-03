@@ -89,7 +89,7 @@ Detail order is Results → My Role → Overview → Challenge → Solution → 
 - Facts come from the resume (`ShivamDubey.pdf`); `details.md` mirrors them. No invented metrics.
 - Employer clients, internal systems and data sources are never named.
 - No phone number on the site.
-- `ShivamDubey.pdf` is linked as-is (with its size, 361 KB, shown next to the button; update the label if the PDF changes).
+- `ShivamDubey.pdf` is linked as-is (with its size, 321 KB, shown next to the button; update the label if the PDF changes).
 - Canonical LinkedIn: https://www.linkedin.com/in/shivam-dubey20
 - The "Last updated" date in the footer and `sitemap.xml` is static; bump it when you publish content changes.
 
