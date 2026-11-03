@@ -4,7 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light dark" />
-  <title>Projects — Shivam Dubey</title>
+  <title>Projects — Shivam Dubey, Data Engineer</title>
+  <meta name="description" content="Data engineering projects by Shivam Dubey: CDC lakehouse, Medallion ETL, real-time streaming, warehousing and orchestration on Azure, Microsoft Fabric, Databricks, Spark and Airflow." />
   <link rel="stylesheet" href="./assets/styles.css" />
 </head>
 <body>
@@ -13,12 +14,13 @@
       <div class="brand">
         <div>
           <div style="font-size:38px; font-weight:800;">Shivam Dubey</div>
-          <div style="font-size:12px;color:var(--muted);">Data Engineering Student • Indore, India</div>
+          <div style="font-size:12px;color:var(--muted);">Data Engineer • Indore, India</div>
         </div>
       </div>
       <nav aria-label="Primary">
         <a href="./index.html">Home</a>
         <a href="./projects.html" aria-current="page">Projects</a>
+        <a href="./index.html#experience">Experience</a>
         <a href="./index.html#skills">Skills</a>
         <a href="./index.html#certifications">Certifications</a>
         <a href="./index.html#education">Education</a>
@@ -51,7 +53,7 @@
 
         <div class="projectsGrid">
           <!-- 1. Near Real-Time CDC Lakehouse Pipeline -->
-          <article class="projectCard reveal" data-delay="1" data-project-card data-search="Near Real-Time CDC Lakehouse Pipeline Azure SQL Database Change Data Capture Azure Data Factory Databricks Delta Lake Synapse Analytics Medallion Bronze Silver Gold" data-project="Near Real-Time CDC Lakehouse Pipeline" data-github="https://github.com/shivamdubey2310/CDC-Lakehouse-Pipeline">
+          <article class="projectCard reveal" data-delay="1" data-project-card data-search="Near Real-Time CDC Lakehouse Pipeline Azure SQL Database Change Tracking Change Data Capture Azure Data Factory Tumbling Window Databricks Delta Lake MERGE Synapse Analytics Serverless Medallion Bronze Silver Gold" data-project="Near Real-Time CDC Lakehouse Pipeline" data-github="https://github.com/shivamdubey2310/CDC-Lakehouse-Pipeline">
             <div class="projectThumbnail">
               <img src="./project_images/Near Real-Time CDC Lakehouse Pipeline.png" alt="Near Real-Time CDC Lakehouse Pipeline" loading="lazy" />
             </div>
@@ -60,7 +62,7 @@
                 <h3>Near Real-Time CDC Lakehouse Pipeline</h3>
                 <span class="pill">CDC</span>
               </div>
-              <p class="meta">A production-grade, near real-time Change Data Capture pipeline on Microsoft Azure that incrementally ingests OLTP changes into a Delta Lake using a Medallion Architecture with 5–10 minute micro-batch intervals.</p>
+              <p class="meta">A metadata-driven Change Data Capture pipeline on Microsoft Azure (SQL Change Tracking + ADF Tumbling Window Triggers) that incrementally ingests 1M+ records into a Medallion Delta Lake, cutting data latency from 24h to sub-10 min. Downstream queries see near-current data instead of day-old snapshots.</p>
               <div class="tags">
                 <span class="tag">Azure Data Factory</span>
                 <span class="tag">Databricks</span>
@@ -71,7 +73,7 @@
           </article>
 
           <!-- 2. Automated Weather Monitoring in Microsoft Fabric -->
-          <article class="projectCard reveal" data-delay="1" data-project-card data-search="Automated Weather Monitoring Microsoft Fabric Real-time Streaming Eventstream Eventhouse Dashboard Data Activator KQL" data-project="Automated Weather Monitoring in Microsoft Fabric" data-github="https://github.com/shivamdubey2310/Fabric-realtime-weather">
+          <article class="projectCard reveal" data-delay="1" data-project-card data-search="Automated Weather Monitoring Microsoft Fabric Real-time Streaming Eventstreams Eventhouse Real-Time Dashboard Fabric Activator KQL Delhi" data-project="Automated Weather Monitoring in Microsoft Fabric" data-github="https://github.com/shivamdubey2310/Fabric-realtime-weather">
             <div class="projectThumbnail">
               <img src="./project_images/Automated Weather Monitoring in Microsoft Fabric.png" alt="Automated Weather Monitoring" loading="lazy" />
             </div>
@@ -80,18 +82,18 @@
                 <h3>Automated Weather Monitoring in Microsoft Fabric</h3>
                 <span class="pill">Real-time</span>
               </div>
-              <p class="meta">A fully managed, end-to-end streaming solution leveraging the unified Microsoft Fabric ecosystem to ingest, process, and visualize live weather telemetry with sub-second latency.</p>
+              <p class="meta">End-to-end streaming on Microsoft Fabric: Delhi weather telemetry flows through Eventstreams into Eventhouse with sub-second latency, replacing batch polling. Dual Fabric Activators alert on high/low temperature, replacing manual monitoring, and a Real-Time Dashboard shows live readings, trends and alert history.</p>
               <div class="tags">
                 <span class="tag">Microsoft Fabric</span>
-                <span class="tag">Eventstream</span>
+                <span class="tag">Eventstreams</span>
                 <span class="tag">Eventhouse</span>
-                <span class="tag">Data Activator</span>
+                <span class="tag">Fabric Activator</span>
               </div>
             </div>
           </article>
 
           <!-- 3. End-to-End Medallion ETL Pipeline via Microsoft Fabric -->
-          <article class="projectCard reveal" data-delay="2" data-project-card data-search="End-to-End Medallion ETL Pipeline Microsoft Fabric Delta Lake Bronze Silver Gold Lakehouse PySpark" data-project="End-to-End Medallion ETL Pipeline via Microsoft Fabric" data-github="https://github.com/shivamdubey2310/AirNow_ETL_Fabric">
+          <article class="projectCard reveal" data-delay="2" data-project-card data-search="End-to-End Medallion ETL Pipeline Microsoft Fabric Delta Lake Bronze Silver Gold Lakehouse PySpark AirNow AQI Power BI" data-project="End-to-End Medallion ETL Pipeline via Microsoft Fabric" data-github="https://github.com/shivamdubey2310/AirNow_ETL_Fabric">
             <div class="projectThumbnail">
               <img src="./project_images/End-to-End Medallion ETL Pipeline via Microsoft Fabric.png" alt="End-to-End Medallion ETL Pipeline" loading="lazy" />
             </div>
@@ -100,7 +102,7 @@
                 <h3>End-to-End Medallion ETL Pipeline via Microsoft Fabric</h3>
                 <span class="pill">Medallion</span>
               </div>
-              <p class="meta">A production-grade batch ETL pipeline implementing the industry-standard Bronze-Silver-Gold architecture to process air quality data using Apache Spark and Delta Lake on Microsoft Fabric.</p>
+              <p class="meta">AirNow API → Bronze/Silver/Gold Delta tables on Microsoft Fabric: 10K+ AQI records processed by config-driven PySpark with structured logging. Gold tables feed Power BI AQI forecasting dashboards.</p>
               <div class="tags">
                 <span class="tag">Microsoft Fabric</span>
                 <span class="tag">Delta Lake</span>
@@ -444,6 +446,12 @@
 
       <footer class="reveal" data-delay="1">
         <div>© <span id="year"></span> Shivam Dubey</div>
+        <div class="contactBox">
+          <a href="mailto:shivamdubey2310711@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/shivam-dubey20" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/shivamdubey2310" target="_blank" rel="noopener">GitHub</a>
+          <a href="ShivamDubey.pdf" target="_blank" rel="noopener">Resume</a>
+        </div>
       </footer>
     </main>
   </div>

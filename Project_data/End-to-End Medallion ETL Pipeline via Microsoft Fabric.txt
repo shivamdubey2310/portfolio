@@ -1,13 +1,15 @@
 End-to-End Medallion ETL Pipeline via Microsoft Fabric
 
 Overview
-A production-grade batch ETL pipeline implementing the industry-standard Bronze-Silver-Gold architecture to process air quality data using Apache Spark and Delta Lake on Microsoft Fabric.
+A production-style batch ETL pipeline implementing the Bronze-Silver-Gold (Medallion) architecture on Microsoft Fabric. It ingests air quality data from the AirNow API, processes 10K+ AQI records with config-driven PySpark and structured logging, and serves Gold tables to Power BI AQI forecasting dashboards.
 
 Tech Stack
 - Platform: Microsoft Fabric (Data Engineering)
-- Processing: Apache Spark (PySpark)
+- Source: AirNow API
+- Processing: Apache Spark (PySpark), config-driven with structured logging
 - Storage: Delta Lake (Bronze/Silver/Gold Tables)
 - Architecture: Medallion (Multi-hop)
+- Consumption: Power BI (AQI forecasting dashboards)
 
 The Challenge
 Raw data from external APIs is often messy, duplicated, and unoptimized for reporting. Loading this directly into a dashboard leads to slow performance and inaccurate insights. The goal was to build a structured "Lakehouse" architecture that rigorously cleanses and organizes data through progressive layers of quality.
@@ -15,10 +17,12 @@ Raw data from external APIs is often messy, duplicated, and unoptimized for repo
 The Solution
 I designed a multi-hop pipeline using Fabric Notebooks to enforce data quality stages:
 - Bronze Layer (Ingest): Built a raw ingestion engine using Python Requests to fetch AirNow API forecasts, converting JSON responses into Spark DataFrames and persisting them as raw Delta Tables.
-- Silver Layer (Curate): Implemented a transformation logic to standardize data types, trim whitespace, and perform deduplication based on composite keys (Date + ReportingArea), ensuring a trusted "single source of truth."
-- Gold Layer (Aggregate): Created a business-level aggregation layer that calculates average AQI metrics per location, optimized for direct consumption by BI tools.
+- Silver Layer (Curate): Implemented transformation logic for type casting, null handling and deduplication on a composite key (Date + ReportingArea), ensuring a trusted "single source of truth."
+- Gold Layer (Aggregate): Created a business-level aggregation layer that calculates average AQI metrics per location; these Gold tables feed Power BI AQI forecasting dashboards.
+- Config-Driven Design: Pipeline behavior is driven by configuration, with structured logging across all PySpark stages.
 
 Key Highlights
-- Lakehouse Architecture: Demonstrated mastery of the Medallion Architecture, the standard design pattern for modern data platforms.
-- Spark Optimization: Leveraged the distributed power of Apache Spark (Fabric Runtime) to handle data processing efficiently, ensuring the pipeline can scale to massive datasets.
+- Results: 10K+ AQI records processed end to end from the AirNow API through Bronze, Silver and Gold, feeding Power BI AQI forecasting dashboards.
+- Lakehouse Architecture: Implements the Medallion Architecture, the standard design pattern for modern data platforms.
+- Config-Driven PySpark: Configuration-driven transformations with structured logging make runs observable and easy to adjust.
 - Delta Lake Features: Utilized Delta Lake capabilities for ACID transactions, ensuring that downstream reports never see partial or corrupt data loads.

@@ -22,4 +22,4 @@ I built a metadata-driven ingestion pipeline that automates the "Bronze" layer o
 Key Highlights
 - Stream Processing: Demonstrated the ability to write "Micro-batch" processing code, a step up from standard batch ETL.
 - Metadata Management: The separation of schema definition (JSON) from the processing logic (Main.py) shows a mature, modular coding style.
-- Reliability: Focused on "Checkpointing" and recovery strategies, which are often overlooked in student projects but essential in production.
+- Reliability: Focused on "Checkpointing" and recovery strategies, which are often overlooked in small projects but essential in production.

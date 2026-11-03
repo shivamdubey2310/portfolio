@@ -4,7 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light dark" />
-  <title>Shivam Dubey — Data Engineering Portfolio</title>
+  <title>Shivam Dubey — Data Engineer Portfolio</title>
+  <meta name="description" content="Shivam Dubey is a Data Engineer at Bizfy Solutions building production ELT pipelines and Medallion Delta Lakes on Databricks, Microsoft Fabric and Azure. Open to Data Engineer roles worldwide." />
   <link rel="stylesheet" href="./assets/styles.css" />
 </head>
 <body>
@@ -13,12 +14,13 @@
       <div class="brand">
         <div>
           <div style="font-size:38px; font-weight:800;">Shivam Dubey</div>
-          <div style="font-size:12px;color:var(--muted);">Data Engineering Student • Indore, India</div>
+          <div style="font-size:12px;color:var(--muted);">Data Engineer • Indore, India</div>
         </div>
       </div>
       <nav aria-label="Primary">
         <a href="./index.html" aria-current="page">Home</a>
         <a href="./projects.html">Projects</a>
+        <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#certifications">Certifications</a>
         <a href="#education">Education</a>
@@ -47,55 +49,60 @@
         <div class="panel left reveal" data-delay="1">
           <div class="kicker">
             <span class="dot" aria-hidden="true"></span>
-            <span>Building reliable pipelines • Warehousing • Cloud • Analytics-ready data</span>
+            <span>Data Engineer • Production pipelines • Lakehouse • Open to roles worldwide</span>
           </div>
           <h1>
             I turn raw data into
             <span style="color: #0f766e;">trusted products</span>.
           </h1>
           <p class="subtitle">
-            Hi, I'm <strong>Shivam Dubey</strong> — an M.Tech (Dual Degree) student in Artificial Intelligence & Data Science at SDSF, DAVV, Indore.
-            I'm passionate about data engineering: building scalable pipelines, optimizing workflows, and creating clean data foundations for AI/ML systems.
+            Hi, I'm <strong>Shivam Dubey</strong> — a Data Engineer at <strong>Bizfy Solutions</strong> (intern since Mar 2026, full-time since Sep 2026) building production ELT pipelines and Medallion Delta Lakes on Databricks, Microsoft Fabric and Azure with PySpark, SQL, Airflow and ADF.
+            Microsoft DP-700 certified; pursuing an integrated M.Tech in AI &amp; Data Science (DAVV, 2027).
           </p>
           <div class="heroActions">
             <a class="btn primary" href="./projects.html">View projects</a>
             <a class="btn" href="ShivamDubey.pdf" target="_blank" rel="noopener">Download resume</a>
-            <a class="btn" href="https://www.linkedin.com/in/shivam-dubey20/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn" href="https://www.linkedin.com/in/shivam-dubey20" target="_blank" rel="noopener">LinkedIn</a>
           </div>
 
           <div class="statsBar panel reveal" data-delay="2" style="margin-top:18px; box-shadow:none;">
             <div class="stat">
-              <div class="label">Focus</div>
-              <div class="value">Cloud-based data pipelines</div>
+              <div class="label">Role</div>
+              <div class="value">Data Engineer @ Bizfy</div>
             </div>
             <div class="stat">
-              <div class="label">Strength</div>
-              <div class="value">Microsoft Fabric</div>
+              <div class="label">Scale</div>
+              <div class="value">50M+ daily records</div>
             </div>
             <div class="stat">
-              <div class="label">Platforms</div>
-              <div class="value">Azure, Microsoft Fabric</div>
+              <div class="label">Reliability</div>
+              <div class="value">99.9%</div>
             </div>
             <div class="stat">
-              <div class="label">Interests</div>
-              <div class="value">Real-time</div>
+              <div class="label">Query latency</div>
+              <div class="value">−45%</div>
+            </div>
+            <div class="stat">
+              <div class="label">Certified</div>
+              <div class="value">DP-700</div>
             </div>
           </div>
         </div>
 
         <div class="panel right reveal" data-delay="2">
           <div class="miniCard">
-            <div class="miniTitle">Signature</div>
-            <div class="bigStat">14</div>
-            <div class="miniText">projects across pipelines, modeling & BI</div>
+            <div class="miniTitle">Now</div>
+            <div class="miniText">Data Engineer at Bizfy Solutions, building Medallion Delta Lakes and production ELT pipelines on Databricks, Microsoft Fabric and Azure.</div>
           </div>
           <div class="miniCard">
-            <div class="miniTitle">Currently learning</div>
-            <div class="miniText">Azure Cloud, Databricks, and Spark Optimization.</div>
+            <div class="miniTitle">Open to</div>
+            <div class="miniText">Data Engineer roles worldwide. Open to relocation.</div>
+            <!-- TODO(confirm): the old "learning" card was removed because Azure/Databricks/Spark are now day-to-day work. Add a "Learning" card here only if you tell me what it should say. -->
           </div>
           <div class="miniCard">
             <div class="miniTitle">Top Tools I Use</div>
             <div class="miniText topTools">
+              <span class="toolTag">Databricks</span>
               <span class="toolTag">Microsoft Fabric</span>
               <span class="toolTag">Apache Airflow</span>
               <span class="toolTag">PySpark</span>
@@ -116,7 +123,7 @@
               <h3>Near Real-Time CDC Lakehouse Pipeline</h3>
               <span class="pill">CDC</span>
             </div>
-            <p class="meta">Production-grade CDC pipeline on Azure that incrementally ingests OLTP changes into Delta Lake using Medallion Architecture with 5–10 min micro-batch intervals.</p>
+            <p class="meta">Metadata-driven CDC on Azure (SQL Change Tracking + ADF Tumbling Window Triggers) that ingests 1M+ records into a Medallion Delta Lake, cutting data latency from 24h to sub-10 min. Downstream queries see near-current data instead of day-old snapshots.</p>
             <div class="pipeline" aria-label="Pipeline summary">
               <div class="pipeStep"><span class="pipeDot" aria-hidden="true"></span>CDC Extract</div>
               <div class="pipeArrow" aria-hidden="true">→</div>
@@ -139,7 +146,7 @@
               <h3>Automated Weather Monitoring (Microsoft Fabric)</h3>
               <span class="pill">Real-time</span>
             </div>
-            <p class="meta">Unified streaming architecture for immediate environmental monitoring and automated alerts.</p>
+            <p class="meta">Delhi weather telemetry streamed through Eventstreams into Eventhouse with sub-second latency, replacing batch polling. Dual Fabric Activators alert on high/low temperature, replacing manual monitoring.</p>
             <div class="pipeline" aria-label="Pipeline summary">
               <div class="pipeStep"><span class="pipeDot" aria-hidden="true"></span>Telemetry</div>
               <div class="pipeArrow" aria-hidden="true">→</div>
@@ -162,7 +169,7 @@
               <h3>Medallion ETL Pipeline (Microsoft Fabric)</h3>
               <span class="pill">Medallion</span>
             </div>
-            <p class="meta">Raw API → Bronze/Silver/Gold Delta tables → Power BI dashboards for AQI forecasting.</p>
+            <p class="meta">AirNow API → Bronze/Silver/Gold Delta tables (10K+ AQI records) via config-driven PySpark with structured logging, feeding Power BI AQI forecasting dashboards.</p>
             <div class="pipeline">
               <div class="pipeStep"><span class="pipeDot" aria-hidden="true"></span>Bronze</div>
               <div class="pipeArrow" aria-hidden="true">→</div>
@@ -210,6 +217,53 @@
         </div>
       </section>
 
+      <section id="experience" class="reveal" data-delay="1">
+        <div class="sectionHead">
+          <h2>Experience</h2>
+          <div class="hint">Production data engineering at Bizfy Solutions</div>
+        </div>
+
+        <div class="timeline">
+          <article class="card reveal" data-delay="1">
+            <div class="cardTop">
+              <h3>Data Engineer</h3>
+              <span class="pill">Sep 2026 – Present</span>
+            </div>
+            <p class="meta">Bizfy Solutions • Indore</p>
+            <ul class="bullets">
+              <li><strong>Production Pipeline Scaling:</strong> Architected and scaled end-to-end ELT pipelines processing 50M+ daily records, moving workloads from batch polling to event-driven architecture so downstream consumers get fresh data without polling delays.</li>
+              <li><strong>Medallion Lakehouse Optimization:</strong> Led migration of legacy data storage to a Bronze/Silver/Gold Delta Lake on Databricks / Microsoft Fabric using ACID transactions, Z-ordering and MERGE upserts, cutting query latency by 45% for analytics and AI consumers.</li>
+              <li><strong>Orchestration &amp; Reliability:</strong> Deployed workflows on Apache Airflow and Azure Data Factory with automated retries, anomaly detection and alerting, reaching 99.9% pipeline reliability so downstream teams stop chasing failed loads.</li>
+              <li><strong>AI-Ready Data Infrastructure:</strong> Worked directly with AI/ML engineers to clean and vectorize structured and unstructured datasets, speeding up LLM/AI model training cycles.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Databricks</span>
+              <span class="tag">Microsoft Fabric</span>
+              <span class="tag">Delta Lake</span>
+              <span class="tag">Apache Airflow</span>
+              <span class="tag">Azure Data Factory</span>
+            </div>
+          </article>
+
+          <article class="card reveal" data-delay="2">
+            <div class="cardTop">
+              <h3>Data Engineer Intern</h3>
+              <span class="pill">Mar 2026 – Aug 2026</span>
+            </div>
+            <p class="meta">Bizfy Solutions</p>
+            <ul class="bullets">
+              <li>Designed and maintained ingestion pipelines for AI applications, processing diverse structured and unstructured datasets.</li>
+              <li>Built and optimized PySpark notebooks on Databricks for data preprocessing, feature engineering and cleaning.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">PySpark</span>
+              <span class="tag">Databricks</span>
+              <span class="tag">Feature Engineering</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section id="skills" class="reveal" data-delay="1">
         <div class="sectionHead">
           <h2>Skills</h2>
@@ -218,54 +272,78 @@
 
         <div class="grid2">
           <div class="card reveal" data-delay="1">
-            <h3 style="margin-top:0;">Programming Languages</h3>
+            <h3 style="margin-top:0;">Languages</h3>
             <div class="tags">
-              <span class="tag">Python</span>
-              <span class="tag">SQL</span>
+              <span class="tag">Python (Pandas, PySpark)</span>
+              <span class="tag">SQL (T-SQL, PostgreSQL, MySQL)</span>
               <span class="tag">Bash</span>
             </div>
           </div>
 
           <div class="card reveal" data-delay="2">
-            <h3 style="margin-top:0;">Databases</h3>
+            <h3 style="margin-top:0;">Cloud &amp; Platforms</h3>
             <div class="tags">
-              <span class="tag">MySQL</span>
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">MongoDB</span>
-              <span class="tag">Azure SQL Database</span>
+              <span class="tag">Microsoft Fabric</span>
+              <span class="tag">Databricks</span>
+              <span class="tag">Azure Data Factory</span>
+              <span class="tag">Synapse Analytics</span>
+              <span class="tag">Event Hubs</span>
+              <span class="tag">ADLS Gen2</span>
+              <span class="tag">Key Vault</span>
+              <span class="tag">Stream Analytics</span>
             </div>
           </div>
 
           <div class="card reveal" data-delay="3">
-            <h3 style="margin-top:0;">Cloud (Azure)</h3>
+            <h3 style="margin-top:0;">Databases</h3>
             <div class="tags">
-              <span class="tag">Microsoft Fabric</span>
-              <span class="tag">Azure Data Factory</span>
-              <span class="tag">Synapse Analytics</span>
-              <span class="tag">Databricks</span>
-              <span class="tag">Key Vault</span>
-              <span class="tag">Stream Analytics</span>
-              <span class="tag">Event Hubs</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Azure SQL Database</span>
+              <span class="tag">MongoDB</span>
             </div>
           </div>
 
           <div class="card reveal" data-delay="4">
-            <h3 style="margin-top:0;">Tools & Methodologies</h3>
+            <h3 style="margin-top:0;">Data Modeling</h3>
             <div class="tags">
-              <span class="tag">Git</span>
-              <span class="tag">GitHub</span>
-              <span class="tag">Docker</span>
-              <span class="tag">Linux</span>
-              <span class="tag">Dimensional Data Modelling</span>
-              <span class="tag">BeautifulSoup4</span>
+              <span class="tag">Star Schema</span>
+              <span class="tag">Slowly Changing Dimensions</span>
             </div>
           </div>
 
           <div class="card reveal" data-delay="1">
-            <h3 style="margin-top:0;">Big Data & ETL</h3>
+            <h3 style="margin-top:0;">Big Data &amp; ETL</h3>
             <div class="tags">
               <span class="tag">PySpark</span>
+              <span class="tag">Apache Spark</span>
+              <span class="tag">Delta Lake</span>
               <span class="tag">Apache Airflow</span>
+            </div>
+          </div>
+
+          <div class="card reveal" data-delay="2">
+            <h3 style="margin-top:0;">DevOps &amp; Tools</h3>
+            <div class="tags">
+              <span class="tag">Git/GitHub</span>
+              <span class="tag">GitHub Actions</span>
+              <span class="tag">CI/CD</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Linux</span>
+            </div>
+          </div>
+
+          <div class="card reveal" data-delay="3" style="grid-column: 1 / -1;">
+            <h3 style="margin-top:0;">Problem Solving</h3>
+            <div class="tags">
+              <span class="tag">53+ LeetCode SQL problems</span>
+              <span class="tag">58 HackerRank SQL problems</span>
+              <span class="tag">5+ HackerRank badges</span>
+              <!-- TODO(confirm): exact wording of the badge claim ("5+ HackerRank badges"): which badges / which skills? -->
+              <!-- TODO(confirm): LeetCode profile link. Uncomment and fill in the real URL (I did not guess a username):
+              <a class="tag" href="https://leetcode.com/u/TODO_USERNAME" target="_blank" rel="noopener">LeetCode profile →</a> -->
+              <!-- TODO(confirm): HackerRank profile link. Uncomment and fill in the real URL (I did not guess a username):
+              <a class="tag" href="https://www.hackerrank.com/profile/TODO_USERNAME" target="_blank" rel="noopener">HackerRank profile →</a> -->
             </div>
           </div>
         </div>
@@ -280,10 +358,10 @@
         <div class="grid2">
           <article class="card reveal" data-delay="1">
             <div class="cardTop">
-              <h3>Fabric Data Engineer Associate (DP-700)</h3>
+              <h3>Microsoft Fabric Data Engineer Associate (DP-700)</h3>
               <span class="pill">Microsoft</span>
             </div>
-            <p class="meta">Microsoft Certified — validates expertise in designing and implementing enterprise-scale data solutions on Microsoft Fabric.</p>
+            <p class="meta">Feb 2026 • Microsoft Certified — validates expertise in designing and implementing enterprise-scale data solutions on Microsoft Fabric.</p>
             <div class="tags">
               <span class="tag">Microsoft Fabric</span>
               <span class="tag">Data Lakehouse</span>
@@ -299,7 +377,7 @@
               <h3>Astronomer Certification for Apache Airflow 3 Fundamentals</h3>
               <span class="pill">Astronomer</span>
             </div>
-            <p class="meta">Astronomer Certified — demonstrates proficiency in Apache Airflow pipeline orchestration fundamentals.</p>
+            <p class="meta">Feb 2026 • Astronomer Certified — demonstrates proficiency in Apache Airflow pipeline orchestration fundamentals.</p>
             <div class="tags">
               <span class="tag">Apache Airflow</span>
               <span class="tag">Pipeline Orchestration</span>
@@ -320,12 +398,14 @@
         <div class="grid2">
           <article class="card reveal" data-delay="1">
             <h3 style="margin-top:0;">Integrated M.Tech — AI & Data Science</h3>
-            <p class="meta">School of Data Science and Forecasting, DAVV, Indore • 2022–2027</p>
+            <p class="meta">School of Data Science and Forecasting (SDSF), DAVV, Indore • 2022–2027 (expected May 2027) • CGPA 7.1/10</p>
             <div class="tags">
               <span class="tag">DBMS</span>
+              <span class="tag">Big Data Analytics</span>
               <span class="tag">Data Warehousing</span>
-              <span class="tag">Big Data</span>
-              <span class="tag">Cloud</span>
+              <span class="tag">Statistical Methods</span>
+              <span class="tag">PySpark</span>
+              <span class="tag">Python</span>
             </div>
           </article>
         </div>
@@ -340,14 +420,19 @@
         <div class="grid2">
           <article class="card reveal" data-delay="1">
             <div class="cardTop">
-              <h3>Cloud Lead — Google Developer Groups (GDG)</h3>
-              <span class="pill">Leadership</span>
+              <h3>Cloud Lead — GDG on Campus, SDSF</h3>
+              <span class="pill">Sep 2023 – Aug 2024</span>
             </div>
-            <p class="meta">Led sessions and helped students get started with cloud fundamentals and hands‑on projects.</p>
+            <ul class="bullets">
+              <li>Drove 80+ Google Cloud learning-path completions through Cloud Study Jams.</li>
+              <li>Delivered a Gen AI keynote to 50+ attendees.</li>
+              <li>Helped lift the college chapter to Tier 1 status.</li>
+            </ul>
             <div class="tags">
+              <span class="tag">Google Cloud</span>
+              <span class="tag">Cloud Study Jams</span>
+              <span class="tag">Gen AI</span>
               <span class="tag">Leadership</span>
-              <span class="tag">Mentoring</span>
-              <span class="tag">Community</span>
             </div>
           </article>
         </div>
@@ -362,11 +447,11 @@
         <div class="grid2">
           <div class="card reveal" data-delay="1">
             <h3 style="margin-top:0;">Reach me</h3>
-            <p class="meta" style="margin-top:0;">I’m open to internships and entry-level Data Engineering roles.</p>
+            <p class="meta" style="margin-top:0;">Working Data Engineer, open to Data Engineer roles worldwide and open to relocation.</p>
             <div class="tags">
               <a class="tag" href="mailto:shivamdubey2310711@gmail.com">shivamdubey2310711@gmail.com</a>
               <a class="tag" href="https://github.com/shivamdubey2310" target="_blank" rel="noopener">GitHub</a>
-              <a class="tag" href="https://www.linkedin.com/in/shivamdubey-20" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="tag" href="https://www.linkedin.com/in/shivam-dubey20" target="_blank" rel="noopener">LinkedIn</a>
             </div>
           </div>
 
@@ -383,6 +468,12 @@
 
       <footer class="reveal" data-delay="1">
         <div>© <span id="year"></span> Shivam Dubey</div>
+        <div class="contactBox">
+          <a href="mailto:shivamdubey2310711@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/shivam-dubey20" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/shivamdubey2310" target="_blank" rel="noopener">GitHub</a>
+          <a href="ShivamDubey.pdf" target="_blank" rel="noopener">Resume</a>
+        </div>
       </footer>
     </main>
   </div>

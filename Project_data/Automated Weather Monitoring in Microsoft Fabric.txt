@@ -1,13 +1,13 @@
 Automated Weather Monitoring in Microsoft Fabric
 
 Overview
-A fully managed, end-to-end streaming solution leveraging the unified Microsoft Fabric ecosystem to ingest, process, and visualize live weather telemetry with sub-second latency.
+A fully managed, end-to-end streaming solution on Microsoft Fabric that ingests live Delhi weather telemetry through Eventstreams into an Eventhouse with sub-second latency, replacing batch polling, and raises automated alerts when temperatures breach high or low thresholds.
 
 Tech Stack
 - Platform: Microsoft Fabric (SaaS)
-- Ingestion & Processing: Eventstream
+- Ingestion & Processing: Eventstreams
 - Storage: Eventhouse (KQL Database)
-- Alerting: Data Activator (Reflex)
+- Alerting: Fabric Activator (two activators: high and low temperature)
 - Visualization: Real-Time Dashboard
 
 The Challenge
@@ -16,11 +16,13 @@ Traditional streaming architectures often require stitching together complex, di
 The Solution
 I architected a seamless "Ingest-to-Insight" flow within a single Fabric workspace:
 - No-Code Ingestion: Configured a native Weather Connector to continuously pull live atmospheric data for Delhi.
-- Stream Routing: Utilized Eventstreams to capture, transform, and route high-velocity data into storage without writing complex glue code.
-- Real-Time Storage: Provisioned an Eventhouse to store the streaming data, enabling lightning-fast querying using KQL (Kusto Query Language).
-- Automated Action: Implemented Data Activator to monitor data patterns in real-time, triggering automatic alerts when temperatures breached critical thresholds.
+- Stream Routing: Utilized Eventstreams to capture, transform, and route high-velocity data into storage without writing complex glue code, replacing batch polling.
+- Real-Time Storage: Provisioned an Eventhouse to store the streaming data, enabling fast querying using KQL (Kusto Query Language) with sub-second latency.
+- Automated Alerting: Configured two Fabric Activators, one for high-temperature and one for low-temperature thresholds, replacing manual monitoring.
+- Live Dashboard: Built a Real-Time Dashboard showing live readings, trends and alert history.
 
 Key Highlights
-- Next-Gen Tech: Demonstrated early adoption and competency in Microsoft Fabric, the latest evolution in Microsoft's data stack.
+- Results: Sub-second latency replacing batch polling; automated high/low temperature alerts replacing manual monitoring.
 - Event-Driven Architecture: Moved beyond static reporting to active intelligence with automated triggers and alerts.
-- Live Visualization: Built a dashboard that updates instantly as new events arrive, providing true real-time situational awareness.
+- Live Visualization: A Real-Time Dashboard with live readings, trends and alert history gives continuous situational awareness.
+- Unified Platform: Ingestion, storage, alerting and visualization all run inside a single Microsoft Fabric workspace.
