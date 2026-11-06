@@ -30,11 +30,31 @@ Static portfolio (plain HTML / CSS / JS, no build step, hosted on GitHub Pages) 
 | `assets/projects.js` | `.txt` parser, detail dialog, filters, lightbox, deep links |
 | `Project_data/`, `Other_project_data/` | One `.txt` per project card (the detail view content) |
 | `project_images/`, `Other_project_images/` | Diagram PNGs (fallback) and `web/*.webp` (served to modern browsers) |
-| `tools/` | `og-card.html` (Open Graph template) and `make-webp.py` (image helper) |
+| `tools/` | `add-project.py` (add a project from image + README + GitHub URL), `make-webp.py` (image helper), `og-card.html` (Open Graph template) |
 
 Principles: content stays visible with JS off (animations only start once `app.js` runs); motion is off for `prefers-reduced-motion` and touch devices; no frameworks, no trackers (an analytics snippet is included but commented out).
 
 ## Add or edit a project
+
+### Quick way: one command
+
+Have the diagram image, the project's `README.md` and its GitHub URL? Run:
+
+```bash
+python3 tools/add-project.py \
+  --image ~/Downloads/diagram.png \
+  --readme ~/Downloads/README.md \
+  --github https://github.com/shivamdubey2310/<repo> \
+  --alt "One sentence describing what the diagram shows"
+```
+
+It copies the image and makes the WebP variants, converts the README into `Project_data/<Name>.txt`, inserts the card into "More projects" (add `--flagship` for the top grid), appends to `project_links.txt`, and refreshes the counts, footer date and `sitemap.xml`. The title comes from the README's first `# Heading` (override with `--name`).
+
+Useful options: `--summary`, `--tags "Airflow,PySpark"`, `--filters airflow,streaming`, `--pill`, `--role`, `--year`, `--status`, `--demo`, and `--outcome` / `--metric "24h -> 10 min | Data latency"` (only with numbers your resume supports). Add `--dry-run` to preview the `.txt` without writing anything. Needs Pillow.
+
+Afterwards, **review the generated `.txt`** (README headings are mapped to Overview / Challenge / Solution / Tech Stack / Highlights on a best-effort basis) and check the card at `http://localhost:8000/projects.html#<slug>`. Tool tags and topic filters are auto-detected from the README text, so adjust them with `--tags` / `--filters` if they look off. To edit afterwards, change the `.txt` or the card by hand as described below.
+
+### Manual way
 
 1. **Diagram:** save a PNG as `project_images/<Project name>.png`, then run
    ```bash

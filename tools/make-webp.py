@@ -18,7 +18,8 @@ def slug(name):
     return re.sub(r'-+', '-', re.sub(r'[^a-z0-9]+', '-', n)).strip('-')
 
 
-for path in sys.argv[1:]:
+def make_webp(path):
+    """Write the two WebP variants for one PNG; return (slug, card_w, card_h, full_w, full_h)."""
     folder, fname = os.path.split(path)
     s = slug(os.path.splitext(fname)[0])
     out = os.path.join(folder, 'web')
@@ -38,4 +39,10 @@ for path in sys.argv[1:]:
     full.save(target, 'WEBP', lossless=True, method=6)
     if os.path.getsize(target) > 700 * 1024:
         full.save(target, 'WEBP', quality=90, method=6)
-    print(f'{s}\n  card <img> width={tw} height={th}\n  data-full-w="{fw}" data-full-h="{fh}"')
+    return s, tw, th, fw, fh
+
+
+if __name__ == '__main__':
+    for path in sys.argv[1:]:
+        s, tw, th, fw, fh = make_webp(path)
+        print(f'{s}\n  card <img> width={tw} height={th}\n  data-full-w="{fw}" data-full-h="{fh}"')
