@@ -30,7 +30,7 @@ Static portfolio (plain HTML / CSS / JS, no build step, hosted on GitHub Pages) 
 | `assets/projects.js` | `.txt` parser, detail dialog, filters, lightbox, deep links |
 | `Project_data/`, `Other_project_data/` | One `.txt` per project card (the detail view content) |
 | `project_images/`, `Other_project_images/` | Diagram PNGs (fallback) and `web/*.webp` (served to modern browsers) |
-| `tools/` | `add-project.py` (add a project from image + README + GitHub URL), `make-webp.py` (image helper), `og-card.html` (Open Graph template) |
+| `tools/` | `add-project.py` (add a project from image + description `.txt` + GitHub URL), `make-webp.py` (image helper), `og-card.html` (Open Graph template) |
 
 Principles: content stays visible with JS off (animations only start once `app.js` runs); motion is off for `prefers-reduced-motion` and touch devices; no frameworks, no trackers (an analytics snippet is included but commented out).
 
@@ -38,21 +38,21 @@ Principles: content stays visible with JS off (animations only start once `app.j
 
 ### Quick way: one command
 
-Have the diagram image, the project's `README.md` and its GitHub URL? Run:
+Write the project's description yourself (or with AI) as a `.txt` in the [format below](#txt-format), with the project name on the first line. Then run:
 
 ```bash
 python3 tools/add-project.py \
   --image ~/Downloads/diagram.png \
-  --readme ~/Downloads/README.md \
+  --text "~/Downloads/My Project.txt" \
   --github https://github.com/shivamdubey2310/<repo> \
   --alt "One sentence describing what the diagram shows"
 ```
 
-It copies the image and makes the WebP variants, converts the README into `Project_data/<Name>.txt`, inserts the card into "More projects" (add `--flagship` for the top grid), appends to `project_links.txt`, and refreshes the counts, footer date and `sitemap.xml`. The title comes from the README's first `# Heading` (override with `--name`).
+It copies the image and makes the WebP variants, copies your `.txt` **as written** to `Project_data/<Name>.txt`, inserts the card into "More projects" (add `--flagship` for the top grid), appends to `project_links.txt`, and refreshes the counts, footer date and `sitemap.xml`.
 
-Useful options: `--summary`, `--tags "Airflow,PySpark"`, `--filters airflow,streaming`, `--pill`, `--role`, `--year`, `--status`, `--demo`, and `--outcome` / `--metric "24h -> 10 min | Data latency"` (only with numbers your resume supports). Add `--dry-run` to preview the `.txt` without writing anything. Needs Pillow.
+The card reuses your text: the first line of `Overview` becomes the summary, `Results` becomes the outcome and metric chips, and tool tags and topic filters are detected from the text. Override with `--summary`, `--tags "Airflow,PySpark"`, `--filters airflow,streaming`, `--pill`; `--demo <url>` adds a Live demo button; `--name` overrides the first line. Add `--dry-run` to preview the card settings without writing anything. Needs Pillow.
 
-Afterwards, **review the generated `.txt`** (README headings are mapped to Overview / Challenge / Solution / Tech Stack / Highlights on a best-effort basis) and check the card at `http://localhost:8000/projects.html#<slug>`. Tool tags and topic filters are auto-detected from the README text, so adjust them with `--tags` / `--filters` if they look off. To edit afterwards, change the `.txt` or the card by hand as described below.
+Afterwards, check the card at `http://localhost:8000/projects.html#<slug>`. To edit later, change the `.txt` or the card by hand.
 
 ### Manual way
 
